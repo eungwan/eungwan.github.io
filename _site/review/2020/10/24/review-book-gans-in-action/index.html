@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
+<meta property="og:title" content="[리뷰] GAN 인 액션">
+<meta property="og:type" content="article">
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/review/review-book-gans-in-action-1.png">
+  <br/>
+
+
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="360" />
+
+
+
+  <title>[리뷰] GAN 인 액션 &middot; breadream.io</title>
+
+
+
+<meta name="description" content="
+  한빛미디어 출판사의 "GAN 인 액션(야쿠프 란그르, 블라디미르 보크 저/박해선 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+<meta property="og:description" content="
+  한빛미디어 출판사의 "GAN 인 액션(야쿠프 란그르, 블라디미르 보크 저/박해선 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+
+
+
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="http://localhost:4000/review/2020/10/24/review-book-gans-in-action/">
+<meta property="og:url" content="http://localhost:4000/review/2020/10/24/review-book-gans-in-action/">
+
+<link rel="alternate" type="application/atom+xml" title="breadream.io Feed" href="http://localhost:4000/feed.xml">
+
+
+  <link rel="prev" href="http://localhost:4000/review/2020/10/20/review-book-world-future-report-2021/">
+
+
+
+  <link rel="next" href="http://localhost:4000/review/2020/10/31/review-book-R-for-all/">
+
+
+<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+  window.disablePushState = false;
+  window.disableDrawer = false;
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}
+
+</style>
+
+
+<link rel="preload" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0">
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+      html { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <div class="fade-in">
+    <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/main_left.jpg">
+      
+
+<article id="post-review/2020/10/24/review-book-gans-in-action" class="post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        [리뷰] GAN 인 액션
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2020-10-24T00:00:00+09:00">24 Oct 2020</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/review/" data-flip="title">Review</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/review-review/" data-flip="title">Review</a>, <span>Book</span>, <span>Gan</span>, <span>Autoencoder</span>, <span>Dcgan</span>, <span>Progan</span>, <span>Sgan</span>, <span>Cgan</span>, <span>Cyclegan</span>
+
+    </p>
+
+    
+  <div class="hr" style="padding-bottom:0"></div>
+
+
+  </header>
+  
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+<div class="head-image"><img src="http://localhost:4000/assets/img/review/review-book-gans-in-action-1.png"/></div>
+<br/>
+<style>
+.googleads { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .googleads { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-1200017190012992"
+></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <blockquote>
+  <p><code class="language-plaintext highlighter-rouge">한빛미디어</code> 출판사의 <code class="language-plaintext highlighter-rouge">"GAN 인 액션(야쿠프 란그르, 블라디미르 보크 저/박해선 역)"</code>를 읽고 작성한 리뷰입니다.</p>
+</blockquote>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-gans-in-action-1.png" alt="표지" /></p>
+
+<hr />
+
+<p><code class="language-plaintext highlighter-rouge">GAN</code>(Generative Adversarial Network)은 비지도 학습에 사용되는 인공지능 알고리즘으로, 제로섬 게임 틀 안에서 서로 경쟁하는 두 개의 신경 네트워크 시스템에 의해 구현된다.</p>
+
+<p>두 개의 네트워크는 각각 <code class="language-plaintext highlighter-rouge">생성자, 판별자</code>로 불리는데 생성자는 새로운 데이터를 생성하는 네트워크이고 판별자는 가짜 데이터를 실제 데이터와 구별하는 네트워크이다.</p>
+
+<p>생성자와 판별자는 서로 이기려는 경쟁을 지속한다. 마치 위조범이 더욱 그럴듯한 위작을 만들면 판별자가 위조품을 잡아내는 식의 경쟁이다.</p>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-gans-in-action-2.png" alt="GAN" /></p>
+
+<p>본 도서는 워낙 유명한 In Action 시리즈 중 하나로 시리즈의 다른 책들과는 다르게 책의 분량이 슬림하다는 것이 신기했다. 책을 다 읽고 나중에 알게 된 사실이지만 예제의 일부를 <code class="language-plaintext highlighter-rouge">텐서플로 허브(TFH)</code>를 활용하기 때문이다.</p>
+
+<p>아무래도 방대한 이론 설명, 수식의 전개, 복잡한 코드 구현으로 부터 벗어나 보다 중요한 핵심과 전체의 맥락에 집중할 수 있도록 저자의 의도가 이끈 구성이 아닌가 싶다.</p>
+
+<p>그래서인지 곳곳에 다소 썰렁한(?) 개발자들의 농담이 숨어있다. 저자도 서문에서 일부러 이런 컨셉을 잡고 있음을 밝혔는데 취향이 비슷한 나로써는 요소요소 흥미롭게 읽을 수 있는 장치였다. 예를 들면 아래 그림처럼 말이다.</p>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-gans-in-action-6.png" alt="썰렁" /></p>
+
+<p>이런 구성 측면 외에도 책이 마음에 들었던 점 한가지는 다양한 GAN의 모델을 소개하고 있다는 점이다. 책에서 다루고 있는 GAN과 관련된 모델만 해도 <code class="language-plaintext highlighter-rouge">AE, VAE, GAN, DCGAN, MMGAN, NSGAN, WGAN, WGAN-GP, ProGAN, SGAN, CGAN, CycleGAN, RGAN, SAGAN, BigGAN</code>에 이른다.</p>
+
+<p>물론 하나하나의 모델을 이론적으로 자세히 알아보고 심층있게 구현하는 파트는 별로 없다. 필요한 모델의 레퍼런스는 이미 인터넷과 논문 등 널려있기 때문에, 인 액션 시리즈의 취지대로 <code class="language-plaintext highlighter-rouge">전체 흐름을 파악하고 활용하는 스스로의 메타지식을 갖추는데 주안점</code>을 두고 있는 듯 하다.</p>
+
+<p>위에서 언급한 GAN의 여러 기법들을 모두 정리하고 싶으나 그러기엔 리뷰 분량에 걸맞지 않은 것 같아 책을 읽으며 인상깊었던 점을 중심으로 간략하게 정리해보려 한다.</p>
+
+<p>GAN은 수학적으로 쉽지 않은 모델이기에 입문자들이 바로 이해하기 어렵다. 때문에 다른 GAN 서적들과 비슷하게 먼저 오토인코더 및 변이형 오토인코더를 설명하여 생성 모델을 이해하는데 초점을 맞춘 후 출발한다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">AE, VAE, GAN</code>의 모델의 차이점을 명확하게 설명하고 있으며 아래 나오는 그림으로 명확하게 정리할 수 있다.</p>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-gans-in-action-3.png" alt="GAN과 AE차이" /></p>
+
+<p>AE가 GAN이 탄생하는데 좋은 아이디어가 되었지만 그럼에도 GAN이 필연적으로 활용될 수 밖에 없는 이유에 대한 설명도 다루고 있다.</p>
+
+<p>아래 그림과 같이 VAE 모델은 <code class="language-plaintext highlighter-rouge">최대 가능도 추정</code>을 적용해 분포의 모드가 하나라고 추정하기에 잘못된 결론이 이르게된다. 즉, 서로 다른 두 분포가 있다는 점을 알지 못하기에 점 추정 근처에 꼬리가 두꺼운 정규분포를 형성한다.
+<img src="https://theorydb.github.io/assets/img/review/review-book-gans-in-action-4.png" alt="최대가능도추정" /></p>
+
+<p>개인적으로 이 현상을 예전에 겪었을 때 잘못된 결과에 대한 원인을 쉽게 알지 못했다. 주위 지인에게 물어 꼬리가 두꺼운 정규분포의 결과로 원인을 추정하고 대충 알고 넘긴 부분인데 책 전반에 걸쳐 이런 통계학과 딥러닝의 경계에 필요한 지식들이 두루 소개되고 있어 인상깊었고 많은 도움이 되었다.</p>
+
+<p>이어서 <code class="language-plaintext highlighter-rouge">GAN</code> 기본 모델으로 MNIST 손글씨를 흉내내는 예제를 실습하게 된다. 이를 통해 생성자 G와 판별자 D 각각의 비용함수 J를 정의하고 포드 피워드 신경망으로 훈련값을 갱신하는 절차를 상세히 알 수 있다.</p>
+
+<p>결론적으로 생성자는 판별자의 거짓 양성을 최대화하고, 판별자는 거짓 양성과 거짓 음성 분류를 최소화하는데 목적을 두고 있음을 파악할 수 있다.</p>
+
+<p>다음으로 GAN의 기본 모델에 CNN 모델을 결합한 <code class="language-plaintext highlighter-rouge">DCGAN</code>으로 MNIST 이미지를 생성하는 실습을하게 되는데 기본 모델에 비해 화질 등의 성능이 얼마나 개선되는지 뚜렷하게 확인할 수 있다. 이 과정에서 배치 정규화에 대해 심도있게 학습할 수 있다.</p>
+
+<p>5장은 GAN의 핵심을 잘 전달하고 있는 장으로 개인적으로 가장 마음에 드는 파트이다. <code class="language-plaintext highlighter-rouge">MMGAN</code>, <code class="language-plaintext highlighter-rouge">비포화GAN</code>(NSGAN), 와서스테인(EM) 거리를 종료 기준으로 활용한 <code class="language-plaintext highlighter-rouge">WGAN</code> 등의 비교를 통해 최근에 발전한 GAN의 핵심을 간략하고 쉽게 설명하고 있다.(물론 딥러닝 세계의 속도가 너무 빨라 이젠 최근에 등장한 기술이라 말하기 어려운 고전이 되어버린 것 같은 느낌이다.)</p>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-gans-in-action-7.png" alt="GAN핵심" /></p>
+
+<p>6장에서는 고해상도 층의 점진적 향상을 통해 Full HD 화질의 사진을 생성할 수 있는 <code class="language-plaintext highlighter-rouge">ProGAN</code>을 학습한다. 이 파트에는 앞서 언급했던 <code class="language-plaintext highlighter-rouge">텐서플로 허브</code>를 활용하게 되는데 다른 책에선 아직 보지 못했던 방법인지라 이번 장을 통해 유용함을 체감할 수 있어 좋았다.</p>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-gans-in-action-8.png" alt="TFH" /></p>
+
+<p>구글의 AutoML, 아마존의 세이지메이커 등에서도 보이는 트렌드이기에 익혀두면 좋은 기술이며 나아가 복잡한 코드 구현으로 숲을 잃고 헤매이지 않도록 보다 연구의 중요 아이디어에 집중할 수 있는 장점이 있다.</p>
+
+<p>이어서 적은 레이블로도 높은 분류 정확도를 달성할 수 있는 <code class="language-plaintext highlighter-rouge">SGAN</code>, 훈련 중 레이블 부가정보를 활용하여 이미지 변환의 토대를 제공한 <code class="language-plaintext highlighter-rouge">CGAN</code>, 마지막으로 사과를 오렌지로 만드는 마법같은 <code class="language-plaintext highlighter-rouge">CycleGAN</code>을 실습한다.</p>
+
+<p>실습과정은 이것으로 마치고 파트3에서 앞으로 배울 것들에 대한 소개가 이어진다. 딥러닝 왕초보 시절 학습 데이터에 불순한 의도를 입력해도 원하는대로 동작하는 모델이 생성될 수 있을까 궁금했었는데 역시나 GAN 모델의 해킹이라 할 수 있는 <code class="language-plaintext highlighter-rouge">적대 샘플</code>에 대해 다뤄본다.</p>
+
+<p>GAN이 실제 활용되는 의료, 패션 분야의 비즈니스 모델 및 전망에 대해서도 살펴보고 마지막으로 위에서 구현한 모델보다 한단계 발전한 <code class="language-plaintext highlighter-rouge">RGAN, SAGAN, BigGAN</code>을 소개한다.</p>
+
+<p>GAN은 과학보다는 예술에 가깝다는 명언을 끝으로 본 도서의 대단원도 막을 내린다.</p>
+
+<p>앞서 언급했듯 전반적인 GAN의 발전사를 <code class="language-plaintext highlighter-rouge">알맹이</code>만 쏙쏙 빼먹는 느낌이 든다. 공부할 것이 많은 딥러닝의 세계에 TFH를 활용한 전달 방식도 마음에 들었다. GAN의 연구 및 실무자로 입문하는 분들께는 짧은 시간 대비 효율적인 학습 효과를 얻을 수 있을거란 생각이 들기에 누구보다 GAN 입문자에게 이 책을 추천하고 싶다.</p>
+
+<ul>
+  <li><a href="http://www.yes24.com/Product/Goods/92455849?OzSrank=1">책소개 - GAN 인 액션</a></li>
+</ul>
+
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-1200017190012992"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=[리뷰] GAN 인 액션&amp;url=http://localhost:4000/review/2020/10/24/review-book-gans-in-action/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/2020/10/24/review-book-gans-in-action/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>Data science enthusiast and addict :)</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/15/review-book-licensed-rea-tax/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 2차 부동산세법</span>
+  </a>
+  <small><time datetime="2023-06-15T00:00:00+09:00">
+    15 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/14/review-book-licensed-rea-intro/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 1차 부동산학개론</span>
+  </a>
+  <small><time datetime="2023-06-14T00:00:00+09:00">
+    14 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/05/26/review-book-law-contract/" data-flip="title">
+    <span>[리뷰] 잘 나가는 이공계 직장인들을 위한 법률·계약 상식</span>
+  </a>
+  <small><time datetime="2023-05-26T00:00:00+09:00">
+    26 May 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+      
+    
+  </ul>
+</aside>
+
+
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="[리뷰] GAN 인 액션",this.page.identifier="/review/2020/10/24/review-book-gans-in-action",this.page.url="http://localhost:4000/review/2020/10/24/review-book-gans-in-action/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//eungwan.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+      
+
+      <footer>
+  <hr/>
+  
+    <p>© 2023.06. by breadream.io</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://theorydb.github.io/">theorydb</a></code>
+  </p>
+</footer>
+
+    </main>
+    <div class="right-side">
+  <div class="ad-first">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 블로그-상단-모바일 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;"
+         data-ad-client="ca-pub-1200017190012992"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br/>
+<br/>
+  <div class="ad-second">
+    <!-- 블로그-스카이스크래퍼 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;max-width:320px;width:100%;height:600px"
+         data-ad-client="ca-pub-1200017190012992"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+  </div>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/main_left.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <br/>
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/">breadream.io</a></h1>
+        <p>Orange Bread</p>
+
+      </div>
+
+      <br/>
+      <br/>
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+  
+  
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-1"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/think/">Think</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/think-think/">Think</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-2"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/envops/">EnvOps</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-3"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/startup/">Startup</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/startup-startup/">Startup</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-4"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/unclassified/">Unclassified</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/unclassified-unclassified/">Unclassified</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-5"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/review/">Review</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/review-review/">Review</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/favorites/">Favorites</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/favorites-favorites/">Favorites</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-7"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/about/">About</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+</ul>
+
+      </nav>
+    <br/>
+
+    <form action="/search">
+      <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+      </div>
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+      <div style="clear: both;"></div>
+    </form>
+
+    <br/>
+      <div class="sidebar-box">
+        
+          
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+        
+      </div>
+      <p>Orange Bread :)</p>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://facebook.com/breadream.io">
+    <span class="icon-facebook" title="Facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/eungwan">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:eungwan@gmail.com">
+    <span class="icon-mail" title="Email"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://eungwan.github.io/feed.xml">
+    <span class="icon-rss2" title="RSS"></span>
+    <span class="sr-only">RSS</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+
+
+
+
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    
+    google: {
+      families: 'Lato'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script>
+
+  
+  <!--<![endif]-->
+
+
+
+</body>
+
+</html>

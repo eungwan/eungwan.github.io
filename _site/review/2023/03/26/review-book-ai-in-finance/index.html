@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
+<meta property="og:title" content="[리뷰] 파이썬 기반 금융 인공지능">
+<meta property="og:type" content="article">
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/review/review-book-ai-in-finance-1.png">
+  <br/>
+
+
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="360" />
+
+
+
+  <title>[리뷰] 파이썬 기반 금융 인공지능 &middot; breadream.io</title>
+
+
+
+<meta name="description" content="
+  한빛미디어 출판사의 "파이썬 기반 금융 인공지능(이브 힐피시 저/김도형 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+<meta property="og:description" content="
+  한빛미디어 출판사의 "파이썬 기반 금융 인공지능(이브 힐피시 저/김도형 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+
+
+
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="http://localhost:4000/review/2023/03/26/review-book-ai-in-finance/">
+<meta property="og:url" content="http://localhost:4000/review/2023/03/26/review-book-ai-in-finance/">
+
+<link rel="alternate" type="application/atom+xml" title="breadream.io Feed" href="http://localhost:4000/feed.xml">
+
+
+  <link rel="prev" href="http://localhost:4000/review/2023/03/25/review-book-advice-for-young-investigator/">
+
+
+
+  <link rel="next" href="http://localhost:4000/review/2023/04/02/review-book-statistics-by-simulations/">
+
+
+<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+  window.disablePushState = false;
+  window.disableDrawer = false;
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}
+
+</style>
+
+
+<link rel="preload" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0">
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+      html { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <div class="fade-in">
+    <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/main_left.jpg">
+      
+
+<article id="post-review/2023/03/26/review-book-ai-in-finance" class="post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        [리뷰] 파이썬 기반 금융 인공지능
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2023-03-26T00:00:00+09:00">26 Mar 2023</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/review/" data-flip="title">Review</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/review-review/" data-flip="title">Review</a>, <span>Book</span>, <span>Ai</span>, <span>금융</span>, <span>Python</span>, <span>머신러닝</span>, <span>데이터</span>, <span>통계</span>, <span>신경망</span>, <span>강화학습</span>, <span>트레이딩</span>, <span>알고리즘</span>, <span>백테스팅</span>, <span>전망</span>, <span>특이점</span>
+
+    </p>
+
+    
+  <div class="hr" style="padding-bottom:0"></div>
+
+
+  </header>
+  
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+<div class="head-image"><img src="http://localhost:4000/assets/img/review/review-book-ai-in-finance-1.png"/></div>
+<br/>
+<style>
+.googleads { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .googleads { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-1200017190012992"
+></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <blockquote>
+  <p><code class="language-plaintext highlighter-rouge">한빛미디어</code> 출판사의 <code class="language-plaintext highlighter-rouge">"파이썬 기반 금융 인공지능(이브 힐피시 저/김도형 역)"</code>를 읽고 작성한 리뷰입니다.</p>
+</blockquote>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-ai-in-finance-1.png" alt="표지" /></p>
+
+<hr />
+
+<blockquote>
+  <p>금융 데이터에 AI를 접목하려는 방법을 소개한 책으로 특히, 정규분포나 선형성 등 전통적 금융 모델의 한계를 검증해보는 부분과 시장의 비효율성을 활용하려는 시도가 인상적으로 다가왔다.</p>
+</blockquote>
+
+<p>저자가 본문에 여러번 언급한 바와 같이 금융분야는 유독 AI의 수혜를 제대로 받지 못한 영역 중 하나라는 사실에 동감한다. 독립 시행적 요소가 많은데다 최전선에서 활약하는 퀀트들의 전략은 절대 노출되지 않으며 시장 참여자들은 항상 똑똑하지 않다.</p>
+
+<p>전략이 쉽게 공유될 수 없는 현상 또한 수익률과 직결된 알파 전략을 공개하여 베타로 바꿈으로 인해 발생하는 손실을 책이나 강의 등의 교육 사업의 수익으로 대체하기엔 터무니없이 부족하기에 어찌보면 자연스러운 현상이라 생각한다.</p>
+
+<p>금융분야의 전공 출신도 아닌데다 해당분야의 전문가도 아닌 그저 AI는 조금 아는 수준의 나같은 독자라면 금융 분야는 언제나 호기심을 자극하고 또 성과가 좋으면 평생의 시간적, 경제적 자유를 얻을 수 있는 분야이기에 일말의 기대도 품어보게 하는 분야이지만 사실 참고할 수 있는 레퍼런스가 거의 없다고 봐도 무방하다.</p>
+
+<p>알파고가 등장한 이후 가장 먼저 눈독들였던 분야이기도 한데 관련 레퍼런스가 너무 찾기 어려웠다.</p>
+
+<p>그나마 위안을 준 2권의 책이 있었는데 하나는 마르코스 로페즈 데 프라도가 저술한 “Advances in Financial Machine Learning”이라는 도서였고, 다른 하나는 본 도서의 저자가 집필한 <a href="https://theorydb.github.io/review/2022/04/24/review-book-python-for-finance/">파이썬을 활용한 금융 분석</a>이라는 책이었다.</p>
+
+<p>전자의 책은 내 실력이 부족하여 완벽한 이해가 불가능에 가까웠지만 20여년의 세월동안 실제로 적용해 본 저자의 기법들을 튼튼한 이론적 기반을 토대로 AI를 접목하여 설명해주었기에 전반적인 금융 데이터 분석에 큰 도움을 주었다.</p>
+
+<p>반면 이브 힐피시의 도서는 상대적으로 훨씬 쉬워서 도움이 되었다. 사실 데이터만 금융 관련 데이터일 뿐 거의 Python을 활용하는 책이라 봐도 무방한 것 같다. 금융 관련 데이터들을 Python으로 어떻게 요리하는지 알아가며 금융데이터와 친숙해지고 보다 심도 있는 분석을 위한 좋은 발판을 마련하는 느낌을 받을 수 있었다.</p>
+
+<p>다만 양서임에도 불구하고 전작은 한가지 아쉬운 부분이 있었는데 너무 금융공학 측면에만 초점을 맞춘 나머지 금융 전공자들이 배우는 기본적인 이론이나 정작 AI 관련 기술들을 금융 분야에 어떻게 적용해야 할지 등에 대한 언급이 부족하다는 점 등이 그러한 부분이었다.</p>
+
+<p>이 책은 그런 갈증을 어느정도 해소시켜 준 <code class="language-plaintext highlighter-rouge">전작의 업그레이드 버전</code>이라는 생각이 들었다. 그렇기에 금융 분야에 있어 문외한인 독자라면 이 책을 읽기에 앞서 전작 “파이썬을 활용한 금융 분석”을 먼저 읽기를 권장한다.</p>
+
+<p>금융분야 전공자들이 익히는 이론적 근간들이 상당히 적은 양으로 압축되어 있어 기본적인 데이터 분석지식이나 금융 업무 도메인 없이는 지금 소개하는 책을 쉽게 이해하기 어렵기 때문이다.</p>
+
+<p>이 책의 핵심 부분은 파트 2,3 부분이 될 것이다. 보통 대부분의 유관 도서들이 소개하는 파트4의 <code class="language-plaintext highlighter-rouge">알고리즘 트레이딩</code> 부분도 꽤 흥미로운 부분이지만 공학 영역에 치중된 주제이기에 성공적인 수익률을 기대할 만한 전략이 소개되는 것은 아니고 공학적으로 스스로의 가설을 보다 효율적으로 백테스팅하는 방법이 소개되어있다.</p>
+
+<p>사실 내 생각에 저자는 금융 이론보다는 공학 분야의 전문가라는 생각이 든다. 수익률 측면에서 대단한 고수이거나 금융 이론의 박학다식한 학자라기 보다는 Python 등 AI 기술의 전문가이기에 전통적인 금융 이론이 가지는 한계를 기술로 뚫어보고자 다양한 시도와 연구를 진행하는 듯한 인상을 받았다.</p>
+
+<p>그렇기에 기술적인 가치는 파트4 부분이 가장 배울 것이 많고 유익할지도 모르겠다. 그럼에도 개인적으로는 파트2, 3 부분을 강조하는 이유는 다른 책에서 찾아보기 어려운 신선한 시도와 <code class="language-plaintext highlighter-rouge">누구나 궁금해할만한 질문이지만 누구도 쉽게 답을 내놓지 않는 영역</code>에 대한 나름의 소신을 드러낸 부분이기 때문이다.</p>
+
+<p>비록 수익률과 직결된 전략을 소개하는 것은 아니지만 데이터를 근간으로 한 의미있는 가설을 가정하여 전통적인 이론과 다른 방법으로 AI를 금융에 접목해보고자 한 시도는 충분히 의미있는 성과라는 생각이 들었다.</p>
+
+<p>게다가 수익률의 원천이 전략을 공개하는 것은 유관 도서들이 아무리 세월이 흘러도 쉽지 않을 듯 하기에 오히려 전략이 공개된 책은 경계하고 비판적으로 바라볼 필요가 있다.</p>
+
+<p>설사 도서에 소개된 전략을 그대로 따라하여 대단한 수익률을 얻는다 할지라도 거기에 숨은 알파는 곧 베타로 변할 것이고 수익률은 결국 형편없는 전략이 될테니 현 시점 멋진 전략을 공개한다 한들 시간이 지남에 따라 스스로 엉망의 전략으로 만드는 셈이니 저자로써는 얻을 것이 전혀없다.</p>
+
+<p>마치 조엘 그린블라트가 공개했던 마법의 공식이 대표적인 예가 될 것이다. 그럼에도 전략을 공개한다는 책은 정말 이상한 책임에 틀림없다.</p>
+
+<p>어쨌든 각설하고 책의 중요한 파트에 대해 간단히 소개하자면 우선 파트2에서는 “평균-분산 포트폴리오”, “자본자산 가격결정 모형”, “차익거래 가격결정 이론” 등과 같은 전공자들이 배우는 <code class="language-plaintext highlighter-rouge">전통적인 금융 모델</code>에 대해 소개한다.</p>
+
+<p>이런 이론들은 각 주제마다 한 권의 책을 펴내도 설명이 부족할 수 있는 부분이지만 짧게나마 핵심을 정리하고 최단 기간에 이해할 수 있도록 Python 예제들로 구현해보며 이해를 도와주고 있어 괜찮은 시도라는 생각이 들었다. 다만, 극단적인 학습 효율성을 추구한 분야이기에 관련 지식이 전무하다면 거의 이해하기 어렵다고 봐야 할 것이다.
+<img src="https://theorydb.github.io/assets/img/review/review-book-ai-in-finance-2.png" alt="자본자산 가격결정 모형" /></p>
+
+<p>이런 전통 모델들은 수학적이고 논리적인 근거가 있고 구현하기 쉽다는 장점이 있는 반면 경험적 증거도 부족하고, 상호간에 모순되는 측면이 있으며, 실제 금융데이터와 <code class="language-plaintext highlighter-rouge">괴리</code>가 있다는 부분 때문에 현실적으로 큰 도움이 되지 않는 빛 좋은 개살구라는 것이 저자의 주장이다.</p>
+
+<p>특히, 어느 도메인 분야나 AI와 관련하여 비슷한 속성을 갖고 있는 정규분포나 선형성에 대한 <code class="language-plaintext highlighter-rouge">가정</code>이 가능할리가 없기에 실전에서 큰 지지를 받지 못하고 있음을 강조한다.</p>
+
+<p>그렇기에 저자는 말도 안되는 가정이 필요한 기존 모델을 내려놓고 데이터에만 의존한 인공지능을 적용해보는 시도를 시작한다. 시장에 비효율성이 존재하고 있다는 가정을 근간으로 하는데 이는 <code class="language-plaintext highlighter-rouge">통계적 비효율성을 경제적으로 활용</code>하고자 하는 시도라고 소개하고 있다.</p>
+
+<p>이러한 시도는 파트3으로 계속 이어진다. DNN, RNN, Reinforcement Learning 등의 다양한 <code class="language-plaintext highlighter-rouge">AI 모델을 활용</code>하여 다양한 금융 데이터를 학습, 검증해봄으로써 딥러닝과 금융 데이터의 연결고리에 대한 힌트를 얻을 수 있었다.
+<img src="https://theorydb.github.io/assets/img/review/review-book-ai-in-finance-3.png" alt="검증" /></p>
+
+<p>지금껏 소개한 3개의 파트 외에도 딥러닝이나 머신러닝의 역사 및 발전 개요를 다루는 전반부, 금융 특이점이라는 주제를 중심으로 AI가 금융 분야의 변화에 어떤 영향을 미칠지에 대한 고찰 등이 후반부에 소개되어있다.
+<img src="https://theorydb.github.io/assets/img/review/review-book-ai-in-finance-4.png" alt="고찰" /></p>
+
+<p>전반적으로 전통 모델의 한계가 무엇인지 직접 코딩도 하며 느낄 수 있는 기회를 준다는 점 그리고 시장의 비효율성을 활용하여 금융 데이터를 AI에 접목해보려는 시도 등이 소개되어있다는 점이 이 책이 가지는 차별화된 장점이라 생각한다.</p>
+
+<p>스스로의 가설이 있다면 파트 2,3에 소개된 방식으로 검증도 해보고, 파트4에 소개된 방식으로 구현도 해 본다면 분명 단기간 내 상당히 성장할 수 있을것 같다는 생각이 든다.</p>
+
+<hr />
+
+<ul>
+  <li><a href="http://www.yes24.com/Product/Goods/113493752">책소개 - 파이썬 기반 금융 인공지능</a></li>
+</ul>
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-1200017190012992"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=[리뷰] 파이썬 기반 금융 인공지능&amp;url=http://localhost:4000/review/2023/03/26/review-book-ai-in-finance/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/2023/03/26/review-book-ai-in-finance/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>Data science enthusiast and addict :)</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/15/review-book-licensed-rea-tax/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 2차 부동산세법</span>
+  </a>
+  <small><time datetime="2023-06-15T00:00:00+09:00">
+    15 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/14/review-book-licensed-rea-intro/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 1차 부동산학개론</span>
+  </a>
+  <small><time datetime="2023-06-14T00:00:00+09:00">
+    14 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/05/26/review-book-law-contract/" data-flip="title">
+    <span>[리뷰] 잘 나가는 이공계 직장인들을 위한 법률·계약 상식</span>
+  </a>
+  <small><time datetime="2023-05-26T00:00:00+09:00">
+    26 May 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+      
+    
+  </ul>
+</aside>
+
+
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="[리뷰] 파이썬 기반 금융 인공지능",this.page.identifier="/review/2023/03/26/review-book-ai-in-finance",this.page.url="http://localhost:4000/review/2023/03/26/review-book-ai-in-finance/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//eungwan.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+      
+
+      <footer>
+  <hr/>
+  
+    <p>© 2023.06. by breadream.io</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://theorydb.github.io/">theorydb</a></code>
+  </p>
+</footer>
+
+    </main>
+    <div class="right-side">
+  <div class="ad-first">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 블로그-상단-모바일 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;"
+         data-ad-client="ca-pub-1200017190012992"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br/>
+<br/>
+  <div class="ad-second">
+    <!-- 블로그-스카이스크래퍼 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;max-width:320px;width:100%;height:600px"
+         data-ad-client="ca-pub-1200017190012992"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+  </div>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/main_left.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <br/>
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/">breadream.io</a></h1>
+        <p>Orange Bread</p>
+
+      </div>
+
+      <br/>
+      <br/>
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+  
+  
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-1"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/think/">Think</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/think-think/">Think</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-2"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/envops/">EnvOps</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-3"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/startup/">Startup</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/startup-startup/">Startup</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-4"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/unclassified/">Unclassified</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/unclassified-unclassified/">Unclassified</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-5"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/review/">Review</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/review-review/">Review</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/favorites/">Favorites</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/favorites-favorites/">Favorites</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-7"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/about/">About</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+</ul>
+
+      </nav>
+    <br/>
+
+    <form action="/search">
+      <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+      </div>
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+      <div style="clear: both;"></div>
+    </form>
+
+    <br/>
+      <div class="sidebar-box">
+        
+          
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+        
+      </div>
+      <p>Orange Bread :)</p>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://facebook.com/breadream.io">
+    <span class="icon-facebook" title="Facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/eungwan">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:eungwan@gmail.com">
+    <span class="icon-mail" title="Email"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://eungwan.github.io/feed.xml">
+    <span class="icon-rss2" title="RSS"></span>
+    <span class="sr-only">RSS</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+
+
+
+
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    
+    google: {
+      families: 'Lato'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script>
+
+  
+  <!--<![endif]-->
+
+
+
+</body>
+
+</html>

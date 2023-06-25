@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
+<meta property="og:title" content="[리뷰] 실무에 바로 적용하는 파이썬 코드 레시피 302">
+<meta property="og:type" content="article">
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/review/review-book-python-recipes-1.png">
+  <br/>
+
+
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="360" />
+
+
+
+  <title>[리뷰] 실무에 바로 적용하는 파이썬 코드 레시피 302 &middot; breadream.io</title>
+
+
+
+<meta name="description" content="
+  제이펍 출판사의 "실무에 바로 적용하는 파이썬 코드 레시피 302(구로즈미 다카유키 저/김모세 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+<meta property="og:description" content="
+  제이펍 출판사의 "실무에 바로 적용하는 파이썬 코드 레시피 302(구로즈미 다카유키 저/김모세 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+
+
+
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="http://localhost:4000/review/2022/04/30/review-book-python-recipes/">
+<meta property="og:url" content="http://localhost:4000/review/2022/04/30/review-book-python-recipes/">
+
+<link rel="alternate" type="application/atom+xml" title="breadream.io Feed" href="http://localhost:4000/feed.xml">
+
+
+  <link rel="prev" href="http://localhost:4000/review/2022/04/29/review-book-first-invest-foreign/">
+
+
+
+  <link rel="next" href="http://localhost:4000/review/2022/04/30/review-book-young-rich/">
+
+
+<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+  window.disablePushState = false;
+  window.disableDrawer = false;
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}
+
+</style>
+
+
+<link rel="preload" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0">
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+      html { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <div class="fade-in">
+    <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/main_left.jpg">
+      
+
+<article id="post-review/2022/04/30/review-book-python-recipes" class="post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        [리뷰] 실무에 바로 적용하는 파이썬 코드 레시피 302
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2022-04-30T00:00:00+09:00">30 Apr 2022</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/review/" data-flip="title">Review</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/review-review/" data-flip="title">Review</a>, <span>Book</span>, <span>파이썬</span>, <span>레시피</span>, <span>문법</span>, <span>예제</span>, <span>변수</span>, <span>제어문</span>, <span>함수</span>, <span>클래스</span>, <span>예외</span>, <span>런타임</span>, <span>개발</span>, <span>파일</span>, <span>수치</span>, <span>텍스트</span>, <span>자료형</span>, <span>Db</span>, <span>Http</span>, <span>분석</span>, <span>넘파이</span>, <span>팬더스</span>, <span>자동화</span>
+
+    </p>
+
+    
+  <div class="hr" style="padding-bottom:0"></div>
+
+
+  </header>
+  
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+<div class="head-image"><img src="http://localhost:4000/assets/img/review/review-book-python-recipes-1.png"/></div>
+<br/>
+<style>
+.googleads { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .googleads { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-1200017190012992"
+></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <blockquote>
+  <p><code class="language-plaintext highlighter-rouge">제이펍</code> 출판사의 <code class="language-plaintext highlighter-rouge">"실무에 바로 적용하는 파이썬 코드 레시피 302(구로즈미 다카유키 저/김모세 역)"</code>를 읽고 작성한 리뷰입니다.</p>
+</blockquote>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-python-recipes-1.png" alt="표지" /></p>
+
+<hr />
+
+<blockquote>
+  <p>Python 기초 문법을 활용 용도에 따라 사전식으로 정리한 책으로 80%의 빈도로 자주 활용하는 20%의 핵심을 잘 담고 있으며 Pythonic한 활용에 특화되었다는 점이 장점이다.</p>
+</blockquote>
+
+<p>본 도서의 가장 큰 장점이라면 Python 문법을 필요에 따라 찾아 쓸 수 있도록 용도나 목적에 맞게 <code class="language-plaintext highlighter-rouge">사전식</code>으로 잘 정리한 구성을 꼽을 수 있겠다.</p>
+
+<p>추상적인 설명은 이해하기 어려울 수 있으니 예를 들어 184절 “리스트를 N개로 분할하기”를 살펴보자. 
+<img src="https://theorydb.github.io/assets/img/review/review-book-python-recipes-2.png" alt="리스트컴프리헨션" /></p>
+
+<p>기본적인 구성은 상단에 먼저 Syntax로 대략적인 문법의 기술형태를 정리한 후 이에 대한 간단한 처리방법을 설명한다. 다음으로는 직접 어떻게 활용하는지 심플한 예제 코드가 등장한다.</p>
+
+<p>이어서 소스 코드의 실행결과를 표현한 후 부가 설명을 작성하는 순서로 기술된다. 이런 형식은 이 책에서 다루고 있는 302개 절에서 공통적으로 차용하고 있는 구조이다.</p>
+
+<p>이러한 구성 방식이 마음에 드는 이유는 차후에는 본인이 기억하지 못하는 특정 부분을 <code class="language-plaintext highlighter-rouge">형광펜</code>으로 그어놓고 기억이 떠오르지 않을 때 마다 빠르게 접근할 수 있기 때문이다.</p>
+
+<p>처음 접하는 문법이나 용도라면 모든 내용을 전부 읽어야겠지만 백문이 불여일타라고 한 번 심도 있는 사고 과정을 거쳐 프로그램으로 구현한 내용은 머릿속에 오래 기억이 남기에 다음번에 참조할 때는 기억하기 어려운 부분만 남게 된다.</p>
+
+<p>이를 잘 메모하여 빠르게 찾을 수 있게 책을 단권화하거나 자신만의 방법으로 잘 인덱싱한다면 즉, <code class="language-plaintext highlighter-rouge">자신의 경험과 책이 하나로</code> 합쳐진다면 차후에 매우 편리하게 활용할 수 있을 것이다.</p>
+
+<p>따라서 이 책을 잘 활용하기 위해선 목차를 얼마나 입체적, 구조적으로 파악하고 있는지가 중요하다. 302개의 절로 이루어진 각각의 용도는 결코 적지 않은 숫자이기 때문에 302개의 키워드 별로 단순히 책에서 분류한 24장의 접근법으로 활용하는 것 외에 <code class="language-plaintext highlighter-rouge">자신만의 재구성</code>이 있다면 좋을 듯하다.</p>
+
+<p>예를 들면 18장에서 23장에 이르는 내용은 데이터 과학 혹은 분석에서 자주 사용하는 라이브러리들의 주제를 담고 있다. 넘파이나 팬더스 같은 라이브러리는 데이터 분석에서 빼놓지 않고 활용하는 라이브러리이므로 데이터 특성을 타지 않는 애플리케이션을 개발할 때는 주로 활용할 일이 없을 것이다.</p>
+
+<p>반대로 데이터와 관련된 연산 처리를 할 경우에는 다른 어느 챕터보다 자주 활용하게 되는 장이 될 것이기에 스스로 필요로 하는 용도별로 빨리 접근하는 방식을 정리해 놓는 것이 유용하다.</p>
+
+<p>본 도서를 다양한 개발 경험 과정에 익히고 녹여나가면 아마 잘 외워지지 않는 복잡한 문법이나 패턴만 남게 될 것이고 이를 종이 몇 장 정도로 단권화 할 수 있다면 이 책을 잘 습득했다고 평가할 수 있을 것 같다.</p>
+
+<p>이 책이 단순히 문법을 사전식으로 열거한 구성에 지나지 않는다면 책의 효용은 절반으로 떨어질 것이다. 사전식으로 쉽고 빠르게 찾아볼 수 있다는 점 외에도 몇가지 장점이 더 있다.</p>
+
+<p>우선 위 184절의 내용에도 몇가지 숨은 저자의 노력을 발견할 수 있다.</p>
+
+<p>보통 다른 언어에서 리스트나 배열을 분할할 때는 별도의 함수를 활용하는 등의 방법으로 몇 줄에 달하는 별도의 소스 코드가 필요함을 직관적으로 느낄 수 있을 것이다.</p>
+
+<p>하지만 Python은 다른 언어와는 다른 리스트 컴프리헨션이라는 장치가 있기에 단 한 줄의 코드로 이를 직관적으로 표현할 수 있다. 이처럼 단순히 문법을 열거한 것이 아니라 <code class="language-plaintext highlighter-rouge">Python만의 장점, 독특한 기능, Pythonic한 장점들은 거의 빠지지 않고 명시</code>되어 있기에 다른 언어의 고정관념에서 탈피하는데도 이 책은 많은 도움이 된다.</p>
+
+<p>또 하나의 장점은 입문자가 Python에 능숙해지기 위한 일종의 <code class="language-plaintext highlighter-rouge">학습 플랜의 범위를 좁혀주는 효과</code>도 있다.</p>
+
+<p>Python의 기본 문법 책을 익혀 본 독자라면 공감하겠지만 구조화되지 않은 책을 절차식으로 쭉 읽어나가다보면 기억이 오래 남지 않는다는 점, 기억은 나는데 가물거려서 필요 내용을 찾기위해 한참 책을 검색했던 경험들이 있을 것이다.</p>
+
+<p>그리고 처음엔 이런 기초 문법들이 등고선 형태로 입체적으로 그려지지 않아 각각의 내용이 다 평범해 보인다. 즉, 내용별로 주제별로 가중치가 보이지 않기 때문에 어떤 내용을 더 중점적으로 학습해야하는지 어떤 내용은 빨리 뛰어넘고 필요할 때 찾아봐야 하는지 판단하기가 어렵다.</p>
+
+<p>이는 학습 효율이 많이 떨어질 수 있는 부분이다. 나중에 경험과 내공이 쌓인 후에야 ‘아.. 이 부분은 괜히 열심히 외웠구나..’ 혹은 ‘이건 엄청 자주 활용되는 부분인데 처음부터 그냥 암기하는 편이 나았겠구나..’등의 판단을 하며 학습의 비효율성을 실감할 것이다.</p>
+
+<p>반면 이 책은 <code class="language-plaintext highlighter-rouge">가장 중요한 부분, 가장 활용도가 높은 부분의 주제를 뽑아 놓은</code> 책이다. 수 많은 학습 범위를 무조건 알아야 하는 부분으로 한정하여 학습 범위를 좁혀주는 셈이다.</p>
+
+<p>입문자라면 괜히 모든 내용을 다 살펴볼 것 없이 가장 자주 활용하는 본 도서만 일단 익히는 것을 목적으로 해도 학습 능률이 결코 떨어지지 않을 것이다.</p>
+
+<p>위 예제인 184절 전후로는 리스트와 관련된 문법과 패턴들이 배치되어 있다. 리스트는 Python에서 정말 자주 활용하는 중요한 자료구조로 반드시 다양한 형태의 활용법을 익혀두어야 한다.</p>
+
+<p>그렇지 않을 경우 타 언어를 읽고 해석하는 독해력이 떨어짐은 물론 스스로 비 효율적인 코드를 생산해 내어 추후 리팩토링을 필요로 하는 기술적인 부채를 안게 되거나 타 개발자와의 협업에 오버헤드를 발생시킬 수 있다.</p>
+
+<p>리스트를 생성하는 방법, 정렬, 일괄처리, 분할, 추출, 셔플, 중복요소 제거 등 어떤 형태의 데이터 리스트가 주어져도 엑셀보다 빠르게 사칙연산 다루듯 즉각적인 처리를 위한 훈련이 필요한데 약 10년 간 Python을 익히며 암기하듯 중요하다 생각한 패턴이 거의 다 담겨있어 놀랐다.</p>
+
+<p>이렇듯 이 책은 놓치지 말아야 할 중요한 특징들, Python만의 장점을 십분 활용할 수 있는 <code class="language-plaintext highlighter-rouge">80%의 빈도로 자주 활용하는 20%를 잘 담고 있다</code> 평하고 싶다.</p>
+
+<p>또 이 책은 단순히 문법적인 요소나 활용 예제만을 담고 있는 것은 아님을 소개하고 싶다. 아래 그림은 118절에 등장하는 “안티 패턴 개선하기” 절의 일부분이다. 
+<img src="https://theorydb.github.io/assets/img/review/review-book-python-recipes-3.png" alt="안티패턴" /></p>
+
+<p>보다시피 단순한 문법 보다는 개발자가 피해야 할 패턴을 소개하며 보다 <code class="language-plaintext highlighter-rouge">Pythonic한 개발 습관</code>을 익히는데 도움을 준다. 삼항 연산자를 잘 활용하면 보기에도 깔끔한 것은 물론 코드량을 줄여줘 에러율을 줄이고 유지보수 확장성 측면에도 품이 줄어든다. 책에 명시한 것 처럼 재대입을 방지하는 것도 장점이다.</p>
+
+<p>또, 제너레이터나 데커레이터와 같은 Python 기초 문법 중 <code class="language-plaintext highlighter-rouge">꽤 난이도가 있는 부분도 빠르게 학습하는 데</code> 도움된다. 이런 부분들은 얼마나 깊이있게 학습하느냐에 따라 본 도서에서 다루고 있는 부분의 수십 배의 분량을 더 읽고 익혀야 할 필요가 생길 수도 있다.</p>
+
+<p>하지만 이런 난이도 있는 주제를 처음 접하는 독자라면 아무리 수백 페이지의 학습에 빠져들었다 할지라도 한 달만 지나면 중요한 키워드 몇개만 머리속에 남는 다는 사실을 발견하게 될 것이다.</p>
+
+<p>그 몇개만 남은 주요 키워드가 이 책에 단 2 ~ 3페이지로 압축되어 있다고 보면 된다. 이를 먼저 익히고 보다 자세한 활용방법을 익혀간다면 보다 적은 노력으로도 기억에 오래 남길 수 있고 보다 편하게 학습할 수 있을 것 같다.</p>
+
+<p>24개의 장은 마치 프로그래밍 언어 전공 과목을 실전적으로 재구성한 것처럼 보인다. Python으로 다룰 수 있는 <code class="language-plaintext highlighter-rouge">거의 모든 영역</code>이 담겨있다.</p>
+
+<p>개발환경 구성에서 부터 함수, 변수, 제어, 함수, 클래스, 객체와 같은 기초 문법에서 부터 데이터 분석 관련 라이브러리, 수치 및 문자열 처리, 리스트 등의 Python에 특화된 자료구조, 거의 모든 확장자 파일을 다룰 수 있는 IO 처리와 데이터베이스, 크롤링을 비롯한 HTTP 영역에의 활용, 자동화 등 Python의 활용력을 높여주는 것 이상으로 프로그래밍의 세계를 체계적인 안목으로 정리할 수 있는 기회도 주어지는 셈이다.</p>
+
+<p>무엇보다 Python 외 다른 언어에 능숙한 사람에게는 이 책이 Python 학습 효율을 극도로 높여줄 수 있을거라 생각한다. 그 외에도 프로그래밍의 기초 정도는 알고 있는 사람이라면 이 책으로 Python을 첫 출발하는 것도 아주 좋은 선택이 될 것 같다.</p>
+
+<p>이 두 후보군 만큼은 아니겠지만 그 외에 Python을 능숙하게 다루고 싶은 독자 누구에게나 추천하고 싶은 도서이다.</p>
+
+<p>Python에 능숙해지고 나면 자신의 머릿속에 나름의 구조화된 키워드들이 정리되어 있을텐데 이 책의 구성과 비교하고 정반합하는 과정에서 더 효율적인 Python 접근 방식을 정리할 수 있을 것이라 확신하기 때문이다.</p>
+
+<hr />
+
+<ul>
+  <li><a href="http://www.yes24.com/Product/Goods/108588316">책소개 - 실무에 바로 적용하는 파이썬 코드 레시피 302</a></li>
+</ul>
+
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-1200017190012992"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=[리뷰] 실무에 바로 적용하는 파이썬 코드 레시피 302&amp;url=http://localhost:4000/review/2022/04/30/review-book-python-recipes/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/2022/04/30/review-book-python-recipes/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>Data science enthusiast and addict :)</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/15/review-book-licensed-rea-tax/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 2차 부동산세법</span>
+  </a>
+  <small><time datetime="2023-06-15T00:00:00+09:00">
+    15 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/14/review-book-licensed-rea-intro/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 1차 부동산학개론</span>
+  </a>
+  <small><time datetime="2023-06-14T00:00:00+09:00">
+    14 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/05/26/review-book-law-contract/" data-flip="title">
+    <span>[리뷰] 잘 나가는 이공계 직장인들을 위한 법률·계약 상식</span>
+  </a>
+  <small><time datetime="2023-05-26T00:00:00+09:00">
+    26 May 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+      
+    
+  </ul>
+</aside>
+
+
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="[리뷰] 실무에 바로 적용하는 파이썬 코드 레시피 302",this.page.identifier="/review/2022/04/30/review-book-python-recipes",this.page.url="http://localhost:4000/review/2022/04/30/review-book-python-recipes/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//eungwan.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+      
+
+      <footer>
+  <hr/>
+  
+    <p>© 2023.06. by breadream.io</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://theorydb.github.io/">theorydb</a></code>
+  </p>
+</footer>
+
+    </main>
+    <div class="right-side">
+  <div class="ad-first">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 블로그-상단-모바일 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;"
+         data-ad-client="ca-pub-1200017190012992"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br/>
+<br/>
+  <div class="ad-second">
+    <!-- 블로그-스카이스크래퍼 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;max-width:320px;width:100%;height:600px"
+         data-ad-client="ca-pub-1200017190012992"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+  </div>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/main_left.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <br/>
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/">breadream.io</a></h1>
+        <p>Orange Bread</p>
+
+      </div>
+
+      <br/>
+      <br/>
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+  
+  
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-1"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/think/">Think</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/think-think/">Think</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-2"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/envops/">EnvOps</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-3"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/startup/">Startup</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/startup-startup/">Startup</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-4"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/unclassified/">Unclassified</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/unclassified-unclassified/">Unclassified</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-5"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/review/">Review</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/review-review/">Review</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/favorites/">Favorites</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/favorites-favorites/">Favorites</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-7"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/about/">About</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+</ul>
+
+      </nav>
+    <br/>
+
+    <form action="/search">
+      <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+      </div>
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+      <div style="clear: both;"></div>
+    </form>
+
+    <br/>
+      <div class="sidebar-box">
+        
+          
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+        
+      </div>
+      <p>Orange Bread :)</p>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://facebook.com/breadream.io">
+    <span class="icon-facebook" title="Facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/eungwan">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:eungwan@gmail.com">
+    <span class="icon-mail" title="Email"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://eungwan.github.io/feed.xml">
+    <span class="icon-rss2" title="RSS"></span>
+    <span class="sr-only">RSS</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+
+
+
+
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    
+    google: {
+      families: 'Lato'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script>
+
+  
+  <!--<![endif]-->
+
+
+
+</body>
+
+</html>

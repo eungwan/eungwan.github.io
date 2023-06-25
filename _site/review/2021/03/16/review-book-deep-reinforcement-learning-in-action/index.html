@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
+<meta property="og:title" content="[리뷰] 심층 강화학습 인 액션">
+<meta property="og:type" content="article">
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/review/review-book-deep-reinforcement-learning-in-action-1.png">
+  <br/>
+
+
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="360" />
+
+
+
+  <title>[리뷰] 심층 강화학습 인 액션 &middot; breadream.io</title>
+
+
+
+<meta name="description" content="
+  제이펍 출판사의 "심층 강화학습 인 액션(알렉스 짜이, 브랜던 브라운 공저 / 류광 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+<meta property="og:description" content="
+  제이펍 출판사의 "심층 강화학습 인 액션(알렉스 짜이, 브랜던 브라운 공저 / 류광 역)"를 읽고 작성한 리뷰입니다.
+
+
+">
+
+
+
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="http://localhost:4000/review/2021/03/16/review-book-deep-reinforcement-learning-in-action/">
+<meta property="og:url" content="http://localhost:4000/review/2021/03/16/review-book-deep-reinforcement-learning-in-action/">
+
+<link rel="alternate" type="application/atom+xml" title="breadream.io Feed" href="http://localhost:4000/feed.xml">
+
+
+  <link rel="prev" href="http://localhost:4000/review/2021/03/15/review-book-real-estate-future/">
+
+
+
+  <link rel="next" href="http://localhost:4000/review/2021/03/17/review-book-signals/">
+
+
+<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+  window.disablePushState = false;
+  window.disableDrawer = false;
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}
+
+</style>
+
+
+<link rel="preload" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0">
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+      html { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <div class="fade-in">
+    <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/main_left.jpg">
+      
+
+<article id="post-review/2021/03/16/review-book-deep-reinforcement-learning-in-action" class="post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        [리뷰] 심층 강화학습 인 액션
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2021-03-16T00:00:00+09:00">16 Mar 2021</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/review/" data-flip="title">Review</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/review-review/" data-flip="title">Review</a>, <span>Book</span>, <span>심층학습</span>, <span>강화학습</span>, <span>몬테카를로</span>, <span>마르코프</span>, <span>Dqn</span>, <span>행위자-비평자</span>, <span>진화</span>, <span>호기심</span>, <span>다중에이전트</span>, <span>주의모형</span>, <span>관계모형</span>, <span>Openai</span>, <span>Gym</span>
+
+    </p>
+
+    
+  <div class="hr" style="padding-bottom:0"></div>
+
+
+  </header>
+  
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+<div class="head-image"><img src="http://localhost:4000/assets/img/review/review-book-deep-reinforcement-learning-in-action-1.png"/></div>
+<br/>
+<style>
+.googleads { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .googleads { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-1200017190012992"
+></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <blockquote>
+  <p><code class="language-plaintext highlighter-rouge">제이펍</code> 출판사의 <code class="language-plaintext highlighter-rouge">"심층 강화학습 인 액션(알렉스 짜이, 브랜던 브라운 공저 / 류광 역)"</code>를 읽고 작성한 리뷰입니다.</p>
+</blockquote>
+
+<p><img src="https://theorydb.github.io/assets/img/review/review-book-deep-reinforcement-learning-in-action-1.png" alt="표지" /></p>
+
+<hr />
+
+<p><code class="language-plaintext highlighter-rouge">강화 학습(Reinforcement Learning)</code>은 환경 안에서 에이전트가 현재의 상태를 인식하여 선택 가능한 행동들 중 보상을 최대화하는 행동을 선택하는 방법이다. 알파고 그 중에서도 특히 알파고 제로의 경우가 좋은 예제라 할 수 있다.</p>
+
+<p>강화학습은 배울 것이 너무 많고 하나하나 난이도 끝판왕급의 지식들로 이루어져 있기에 배우기 어렵다. 수학과 기본 지식을 어느정도 통달하지 않고서는 원서나 논문 중심으로 지식을 학습한다는 것은 불가능에 가깝다.</p>
+
+<p>결국 한글로 쓰여진 책들의 도움이 간절한데 안타깝게도 한글로 강화학습을 다루는 책은 매우 드물다. 강화학습을 익혀 나만의 알파고를 구현하고자 시중의 서적을 모두 구매하여 보유하고 있었는데 일부 훌륭한 책도 있으나 조금씩 아쉬운 부분도 있었다. 그런데 최근에 들어 반갑게 본 도서를 만날 수 있었다.</p>
+
+<p>이 책의 큰 장점 중 하나로 국내 서적 중 유일하게 <code class="language-plaintext highlighter-rouge">강화학습의 최신 연구 성과</code>를 다룬다는 점을 들 수 있다. 6장에서는 CartPole에 <code class="language-plaintext highlighter-rouge">유전 알고리즘</code>을 적용하는 코드를 구현하고, 8장은 <code class="language-plaintext highlighter-rouge">ICM</code>(Intrinsic Curiosity Module, 내재적 호기심 모듈)을 다룬다. 심지어 10장에서는 주의 및 관계 모형을 적용하여 <code class="language-plaintext highlighter-rouge">XAI</code>를 시도하기까지 한다.</p>
+
+<p>강화학습의 기본에 충실하기도 급급한 처지이지만 개인적으로 한단계 뛰어넘는 최신 성과들을 접해보기라도 하고 싶었는데 이 책이 가려운 구석을 긁어주어 얼마나 시원했는지 모른다. 아직 모든 것을 정확히 이해한다고 자신할 수는 없지만 유전 알고리즘을 구현하는데 크게 어렵지 않았기에 절반의 성과는 거둔셈이라 스스로 위안을 삼고 있다. 보다 새로운 기법에의 접근을 가능하게 해준 이 책에 매우 고마움을 느낀다.</p>
+
+<p>수학을 열심히 공부했고 좋아하지만 고수라고 감히 말할 수는 없는 입장에서 그나마 최신기술의 맛을 볼 수 있었던 이유는 이 책 덕분인데 책에 어떤 특징이 있어 가능했는지 설명하는 것이 이 책을 읽을 독자분들께 도움이 될 것이라 생각하여 간단히 정리해 본다.</p>
+
+<p>우선 이 책은 제목에서 알 수 있듯 유명한 “in Action” 시리즈 중 하나이다. 인 액션 시리즈는 IT, AI 영역을 가리지 않고 대부분 양서들로써 <code class="language-plaintext highlighter-rouge">일단 구현</code>을 할 수 있는 역량을 키워주는데 매우 적합한 책이다.</p>
+
+<p>이런 특징때문에 독자 각자의 처지에 따라 책의 호불호가 갈릴 수는 있겠지만 기본적으로 이 책을 읽어본 독자라면 양서에 가깝다는 판단에는 대부분 동의할 것으로 생각한다.</p>
+
+<p>만약 새로운 것을 창조해야 하는 연구자라면 이 책은 조금 부족할 것이다. 연구자가 아니라 잘은 모르겠지만 이 책에는 수식이 많이 등장하지만 여타 전공 서적에 비하면 수식이 적은 편이다.</p>
+
+<p>대신 연구보다는 구현을 목적으로 하는 엔지니어라면, 또 빠른 시간내에 구현을 필요로 한다면 이 책은 가뭄의 단비보다 소중한 책이다. 지금 내 처지가 그렇다. 언제까지 강화학습의 기본 지식만 학습하거나 처음부터 수식을 들여다보기에는 너무 많은 시간이 필요하다. 개인적인 목표는 스스로 알파고를 구현하는데 있기에 필요 이상의 기초 지식을 원하지는 않는다.</p>
+
+<p>이 책은 인 액션 시리즈 답게 하나씩 따라하다보면 구현을 통해 내부 메커니즘을 이해할 수 있는 구조로 되어 있어 구현 실력을 끌어올리는데 큰 도움이 되었다.</p>
+
+<p>그렇다고 수학없이 코드로만 구성된 책도 아니다. 코드는 수학과 메커니즘을 이해하기 위한 의사소통 수단으로 쓰였을 뿐 그 자체가 목적이 되지는 않는다. 책에서도 언급하기를 수학 없이 강화학습을 익히는 것은 마치 부실공사에 가까운 기초가 허약한 상태에서 예제 코드를 흉내내는 이상의 의미를 부여하기 어렵다는 식으로 무의미함을 밝힌다. 개인적으로도 수학을 배제한 책이 얼마나 훌륭할까라는 생각이 들어 언젠가 부터는 수식이 등장하지 않으면 즐겨보지 않게 되었다.</p>
+
+<p>그렇다면 이 책은 수식이 존재하는데 어떻게 수식을 이해시키고 구현 능력을 향상시켜 주는 것일까? 저자의 전달력도 한 몫 했겠지만 무엇보다도 큰 도움이 되었던 몇가지 독특한 방식이 있었기에 구체적으로 소개해보려 한다.</p>
+
+<hr />
+
+<ul>
+  <li>
+    <p><strong>난이도와 타임라인의 방향 일치</strong><br />
+이게 무슨 말인가 하면 강화학습의 최초 기원으로 거슬러 올라가 최신 기술에 이르기 까지 시간 순으로 설명하는 방식을 취하고 있다는 의미이다. 먼저 간단한 <code class="language-plaintext highlighter-rouge">개념을 소개하고, 문제를 마주치며, 해결책을 고민하고, 해법을 고안하며, 시험하고, 개선하다가 형식화하고, 수학 공식 등으로 정리</code>하는 순서를 지킨다.</p>
+
+    <p>대부분의 기술 서적은 거꾸로 현재의 기술을 정의, 소개하고 필요한 경우에만 과거의 히스토리를 잠깐 언급하기에 기억력외에 우리 두뇌 능력을 활용하기 어렵게 구성되어 있는데, 저자는 통찰력 있게 그 부분의 맹점을 해소하고자 노력하였다. 그 흐름 속에서 자연스럽게 <code class="language-plaintext highlighter-rouge">구체화된 예시</code>를 종종 만날 수 있기에 이해하기 너무 편하다는 느낌을 받을 수 있었다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <p><strong>수식과 의사코드</strong><br />
+먼저 예시를 통해 살펴보자. 아래 그림은 Q 학습 알고리즘의 갱신 규칙에 대한 수식인데 처음 이 수식을 만났을때의 황당함을 떠올리면 이런 친절한 책이 또 있나 싶을 정도다.
+<img src="https://theorydb.github.io/assets/img/review/review-book-deep-reinforcement-learning-in-action-2.png" alt="Q학습" /></p>
+
+    <p>먼저 해당 수식을 소개하기 전에 충분히 <code class="language-plaintext highlighter-rouge">개념과 줄글</code>로 설명을 한 후, <code class="language-plaintext highlighter-rouge">수식</code>이 등장하면 위 사진이 보여주듯 각 애매모호한 <code class="language-plaintext highlighter-rouge">기호를 하나씩</code> 설명해준다. 그럼에도 이해 못할 경우를 대비하여 <code class="language-plaintext highlighter-rouge">의사코드</code>로 구현해보고, 이에 대한 설명으로 이해의 쐐기를 박는다.</p>
+
+    <p>그래도 부족할 것 같은 부분에는 <code class="language-plaintext highlighter-rouge">Python 코드</code>로 설명을 한다. 아래 그림은 기대 보상에 근거하여 최선의 동작을 선택하는 방법을 수식, 의사코드, Python 코드로 표현한 예제이다.
+<img src="https://theorydb.github.io/assets/img/review/review-book-deep-reinforcement-learning-in-action-3.png" alt="동작" /></p>
+
+    <p>이러한 장점 때문에 구현에는 자신이 있는데 수식에 자신이 없는 사람이라면 이 책이 제 격이라 할 수 있다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <p><strong>끈 그림(String Diagram)</strong><br />
+이 역시 예시로 먼저 설명하는 것이 빠를 듯 하다. 
+<img src="https://theorydb.github.io/assets/img/review/review-book-deep-reinforcement-learning-in-action-4.png" alt="끈그림" /></p>
+
+    <p>기존 강화학습 서적들을 보면 강화학습의 시작에는 늘 이와 같은 그림이 등장한다. 그런데 자세히 보면 약간 다르다는 것을 알 수 있다. 선(끈)에는 화살표가 있고 주로 <code class="language-plaintext highlighter-rouge">동사</code>에 해당하는 부분이 기술되어 있고, 네모 박스 안에는 <code class="language-plaintext highlighter-rouge">명사</code>에 해당하는 부분이 기술되어 있다.</p>
+
+    <p><code class="language-plaintext highlighter-rouge">상태와 동작을 명확히 나눠</code>줌으로써 명확한 이해를 돕는다. 강화학습의 기본 메커니즘이 복잡해질수록 <code class="language-plaintext highlighter-rouge">비슷한 용어</code>가 무수히 쏟아진다. 상태 공간, 동작 공간, 상태 가치, 동작 가치, 정책 함수, Q 함수, Q 학습, 심층 Q 신경망 등 이 용어들을 명확하게 이해하지 못하면 강화학습 메커니즘을 이해하는 것이 불가능한데 끈 그림의 적절한 역할 분리가 내게는 큰 도움이 되었다. 그동안 애매모호했던 개념들이 확실해지면서 구현하는데 애로사항이 크게 줄어들었다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <p><strong>OpenAI의 Gym</strong><br />
+최근 GPT-3로 화제를 모았던 OpenAI에서는 강화학습을 위한 기막힌 환경을 제공하는데 이를 <a href="http://gym.openai.com/envs/#classic_control">Gym</a>이라 한다. 링크에 접속해보면 지원하는 환경들이 나오는데 기본적인 알고리즘부터, 아타리, 로봇제어 문제와 같은 다양한 유형의 환경들이 제공된다.</p>
+
+    <p>강화학습을 연구하는 입장에서 이를 적용할 게임을 만들라고 한다면 그 자체로 비효율적인 또 하나의 과제가 주어지는 셈인데 이런 환경이 제공됨으로써 부수적인 것들은 걷어치우고 <code class="language-plaintext highlighter-rouge">강화학습 구현에만 집중</code> 할 수 있다.</p>
+
+    <p>본 도서는 아래 사진과 같이 다양한 형태로 Gym을 효율적으로 사용한다. 첫번째 그림은 ICM을 적용한 슈퍼마리오 예제이고, 두번째 그림은 분포 DQN을 적용한 아타리 예제이다.
+<img src="https://theorydb.github.io/assets/img/review/review-book-deep-reinforcement-learning-in-action-5.png" alt="슈퍼마리오" /><br />
+<img src="https://theorydb.github.io/assets/img/review/review-book-deep-reinforcement-learning-in-action-7.png" alt="아타리" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<p>위와 같이 본 도서에는 학습 능률을 높혀주는 다양한 장치들이 소개되어 있다. 더불어 관련 논문을 집대성 한 후 <code class="language-plaintext highlighter-rouge">구현 우선 중심으로 취사선택하여 완급을 조절</code>하고 있기에 참 잘 만들어진 책이라는 생각을 했다.</p>
+
+<p>개인적으로 바둑을 즐겨했고 그 안에 숨은 미묘한 감이 정량적으로 계산될 수 있다는 희망을 갖고 있었기에 이를 확인하고자 나만의 알파고를 만들기 위해 꾸준히 노력해 왔다. 여담으로 알파고를 만드는 일에 관심이 있다면 아래 리뷰들을 참고하면 된다. 이 책들 또한 알파고 뿐만 아니라 강화학습을 실전적으로 배우는 데 많은 도움이 되는 양서들이다.</p>
+<ul>
+  <li><a href="https://theorydb.github.io/review/2020/01/17/review-book-alphazero/">알파제로를 분석하며 배우는 인공지능</a></li>
+  <li><a href="https://theorydb.github.io/review/2020/07/05/review-book-dl-and-go/">딥러닝과 바둑</a></li>
+</ul>
+
+<p>이 책 덕분에 나만의 알파고 구현에 한 걸음 더 가까이 다가갈 수 있게 되었다.</p>
+
+<p>더불어 번역의 질도 우수하다. 역자가 번역의 매끄러움을 위해 곳곳에 노력한 티가 보인다. 다만 일반적으로 흔히 쓰이지 않는 단어로 번역된 경우도 보인다.</p>
+
+<p>예를 들면 learning rate는 보통 학습율로 번역이 되곤 하는데 본 도서에는 학습 속도라는 명칭으로 번역을 했다. 이런 부분들 때문에 때로는 생소한 느낌이 들긴 하지만 어차피 원어가 아닌 이상 보다 명확한 해석이 가능하다면 잠시 다른 시각으로 바라봄으로써 되려 전달력이 향상될 수 있는 장점도 있다.</p>
+
+<p>다중 슬롯 머신을 굳이 여러 팔 강도라는 표현으로 번역한 것도 재미있는데 이런 큰 차이가 있는 부분은 역주로 따로 번역의 주를 달아놓았기에 전체적으로 이해하는데 무리는 없었다. 일반적인 서술 문구는 번역의 품질이 훌륭했다고 본다.</p>
+
+<p>정리하자면 본 도서는 <code class="language-plaintext highlighter-rouge">논문의 이해 혹은 구현을 목표</code>로 하는 이에게 가장 적합한 책이라는 생각이 든다. 물론 <code class="language-plaintext highlighter-rouge">초보 연구자</code>들 또한 연구에 앞서 구현을 해보는 것이 깊은 이해에 도움이 될 것이다. 마찬가지로 <code class="language-plaintext highlighter-rouge">고급의 문을 열고 더 높은 곳으로 나아가려는 이들</code>에게도 이 책이 최신 기술의 입문서 역할을 충분히 수행할 수 있을 것이라 생각한다. 특히, 강화학습에 어려움을 겪는 이에게 강력히 추천하고 싶다.</p>
+
+<hr />
+
+<ul>
+  <li><a href="http://www.yes24.com/Product/Goods/94883164">책소개 - 심층 강화학습 인 액션</a></li>
+</ul>
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-1200017190012992"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=[리뷰] 심층 강화학습 인 액션&amp;url=http://localhost:4000/review/2021/03/16/review-book-deep-reinforcement-learning-in-action/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/2021/03/16/review-book-deep-reinforcement-learning-in-action/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>Data science enthusiast and addict :)</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/15/review-book-licensed-rea-tax/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 2차 부동산세법</span>
+  </a>
+  <small><time datetime="2023-06-15T00:00:00+09:00">
+    15 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/14/review-book-licensed-rea-intro/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 1차 부동산학개론</span>
+  </a>
+  <small><time datetime="2023-06-14T00:00:00+09:00">
+    14 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/05/26/review-book-law-contract/" data-flip="title">
+    <span>[리뷰] 잘 나가는 이공계 직장인들을 위한 법률·계약 상식</span>
+  </a>
+  <small><time datetime="2023-05-26T00:00:00+09:00">
+    26 May 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+      
+    
+  </ul>
+</aside>
+
+
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="[리뷰] 심층 강화학습 인 액션",this.page.identifier="/review/2021/03/16/review-book-deep-reinforcement-learning-in-action",this.page.url="http://localhost:4000/review/2021/03/16/review-book-deep-reinforcement-learning-in-action/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//eungwan.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+      
+
+      <footer>
+  <hr/>
+  
+    <p>© 2023.06. by breadream.io</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://theorydb.github.io/">theorydb</a></code>
+  </p>
+</footer>
+
+    </main>
+    <div class="right-side">
+  <div class="ad-first">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 블로그-상단-모바일 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;"
+         data-ad-client="ca-pub-1200017190012992"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br/>
+<br/>
+  <div class="ad-second">
+    <!-- 블로그-스카이스크래퍼 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;max-width:320px;width:100%;height:600px"
+         data-ad-client="ca-pub-1200017190012992"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+  </div>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/main_left.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <br/>
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/">breadream.io</a></h1>
+        <p>Orange Bread</p>
+
+      </div>
+
+      <br/>
+      <br/>
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+  
+  
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-1"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/think/">Think</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/think-think/">Think</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-2"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/envops/">EnvOps</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-3"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/startup/">Startup</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/startup-startup/">Startup</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-4"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/unclassified/">Unclassified</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/unclassified-unclassified/">Unclassified</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-5"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/review/">Review</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/review-review/">Review</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/favorites/">Favorites</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/favorites-favorites/">Favorites</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-7"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/about/">About</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+</ul>
+
+      </nav>
+    <br/>
+
+    <form action="/search">
+      <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+      </div>
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+      <div style="clear: both;"></div>
+    </form>
+
+    <br/>
+      <div class="sidebar-box">
+        
+          
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+        
+      </div>
+      <p>Orange Bread :)</p>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://facebook.com/breadream.io">
+    <span class="icon-facebook" title="Facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/eungwan">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:eungwan@gmail.com">
+    <span class="icon-mail" title="Email"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://eungwan.github.io/feed.xml">
+    <span class="icon-rss2" title="RSS"></span>
+    <span class="sr-only">RSS</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+
+
+
+
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    
+    google: {
+      families: 'Lato'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script>
+
+  
+  <!--<![endif]-->
+
+
+
+</body>
+
+</html>

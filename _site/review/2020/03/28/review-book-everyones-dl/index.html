@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v6.4.0 (https://qwtel.com/hydejack/)
+-->
+
+
+
+
+
+
+
+
+
+<head>
+  <!-- =============== -->
+<!-- META            -->
+<!-- =============== -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="naver-site-verification" content="22c5b4ef3bfda7fc6100671413989219de7a4ac8"/>
+<meta property="og:title" content="[리뷰] 모두의 딥러닝(개정2판)">
+<meta property="og:type" content="article">
+
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/img/review/2020-03-28-review-book-everyones-dl-1.jpg">
+  <br/>
+
+
+<meta property="og:image:width" content="640" />
+<meta property="og:image:height" content="360" />
+
+
+
+  <title>[리뷰] 모두의 딥러닝(개정2판) &middot; breadream.io</title>
+
+
+
+<meta name="description" content="개요
+
+  본 리뷰는 길벗 출판사 "모두의 딥러닝(조태호 저)"을 읽고 얻은 지식을 정리한 글입니다.
+
+
+
+  목차
+  시간이 많지 않은 독자분들을 위하여 (요약소개)
+  개정판에서 달라진 점
+  직관적인 시각 자료를 활용한 핵심만 간추린 설명!
+  표지가 가벼워보인다고 내용까지 가벼운 것은 아니다.
+  누가 읽어야 하는가?
+  책의 구성 및 요약
+
+
+">
+<meta property="og:description" content="개요
+
+  본 리뷰는 길벗 출판사 "모두의 딥러닝(조태호 저)"을 읽고 얻은 지식을 정리한 글입니다.
+
+
+
+  목차
+  시간이 많지 않은 독자분들을 위하여 (요약소개)
+  개정판에서 달라진 점
+  직관적인 시각 자료를 활용한 핵심만 간추린 설명!
+  표지가 가벼워보인다고 내용까지 가벼운 것은 아니다.
+  누가 읽어야 하는가?
+  책의 구성 및 요약
+
+
+">
+
+
+
+<!-- tipuesearch -->
+<link rel="stylesheet" href="/assets/tipuesearch/css/tipuesearch.css">
+
+
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<!-- =============== -->
+<!-- LINKS           -->
+<!-- =============== -->
+<link rel="canonical" href="http://localhost:4000/review/2020/03/28/review-book-everyones-dl/">
+<meta property="og:url" content="http://localhost:4000/review/2020/03/28/review-book-everyones-dl/">
+
+<link rel="alternate" type="application/atom+xml" title="breadream.io Feed" href="http://localhost:4000/feed.xml">
+
+
+  <link rel="prev" href="http://localhost:4000/review/2020/03/19/review-book-startup-science/">
+
+
+
+  <link rel="next" href="http://localhost:4000/review/2020/04/03/review-book-doit-android-10/">
+
+
+<link rel="apple-touch-icon" href="http://localhost:4000/apple-touch-icon.png">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<!-- Place favicon.ico in the root directory -->
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+<script>
+  !function(n,e){function t(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function o(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}n._loaded=!1,n.loadJSDeferred=function(a,d){function r(){n._loaded=!0;var r=e.createElement("script");r.src=a,d&&(("onload"in r?t:o)(r,d),r.onload||t(r,d));var l=e.getElementsByTagName("script")[0];l.parentNode.insertBefore(r,l)}n._loaded?r():n.addEventListener?n.addEventListener("load",r,!1):n.attachEvent?n.attachEvent("onload",r):n.onload=r}}(window,document);
+
+  !function(e){"use strict";var n=function(n,t,o){function i(e){if(a.body)return e();setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var f=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=f[f.length-1]}var s=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=s.length;t--;)if(s[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+
+  !function(t){if(t.loadCSS){var e=loadCSS.relpreload={};if(e.support=function(){try{return t.document.createElement("link").relList.supports("preload")}catch(t){return!1}},e.poly=function(){for(var e=t.document.getElementsByTagName("link"),r=0;r<e.length;r++){var n=e[r];"preload"===n.rel&&"style"===n.getAttribute("as")&&(t.loadCSS(n.href,n,n.getAttribute("media")),n.rel=null)}},!e.support()){e.poly();var r=t.setInterval(e.poly,300);t.addEventListener&&t.addEventListener("load",function(){e.poly(),t.clearInterval(r)}),t.attachEvent&&t.attachEvent("onload",function(){t.clearInterval(r)})}}}(this);
+
+  window.disablePushState = false;
+  window.disableDrawer = false;
+</script>
+
+<!--[if lt IE 9]>
+<script src="https://unpkg.com/html5shiv/dist/html5shiv.min.js"></script>
+<![endif]-->
+
+<!-- =============== -->
+<!-- STYLES          -->
+<!-- =============== -->
+<!--[if gt IE 8]><!---->
+<style>
+  
+  article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}*{box-sizing:border-box}html,body{margin:0;padding:0}html{font-size:16px;line-height:1.75}body{color:#333;background-color:#fff;overflow-y:scroll}a{text-decoration:none}.lead{margin-left:-1rem;margin-right:-1rem}img,.img{display:block;max-width:100%;margin-bottom:1rem;border:none}img.lead,.img.lead{max-width:calc(100% + 2rem);width:calc(100% + 2rem)}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-weight:bold;text-rendering:optimizeLegibility}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{margin:1.6rem 0 1rem;line-height:1.6}h1,.h1{font-size:2rem;line-height:1.25}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.17em}p{margin-top:0;margin-bottom:1rem}p.lead{font-size:1.25rem;font-weight:300;padding:0 1rem}ul,ol,dl{margin-top:0;margin-bottom:1rem}ul,ol{padding-left:1.25rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee}.hr{padding-bottom:.5rem;border-bottom:1px solid #eee;margin-bottom:1.5rem}h4,h5,h6,.h4,.h5,.h6{margin-bottom:0.5rem;font-size:1rem}table{margin-bottom:1rem;width:100%;width:calc(100% + 2rem);margin-left:-1rem;border:1px solid #e5e5e5;border-collapse:collapse;border-spacing:0}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}td:first-child,th:first-child{padding-left:1rem}td:last-child,th:last-child{padding-right:1rem}thead+tbody,tbody+tbody,tfoot{border-top:3px double #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}footer{margin-bottom:2rem}.page,.post{margin-bottom:3em}.page li+li,.post li+li{margin-top:.25rem}.page>header,.post>header{margin-bottom:2rem}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-0.5rem;margin-bottom:1rem;color:#9a9a9a}.related-posts{padding-left:0;list-style:none}.related-posts>li,.related-posts>li+li{margin-top:1rem}.related-posts>li>small,.related-posts>li+li>small{font-size:75%;color:#9a9a9a}.message{margin-bottom:1rem;padding:1rem;color:#787878;background-color:#f9f9f9;margin-left:-1rem;margin-right:-1rem}body,main{position:relative;overflow-x:hidden}@media screen{body::before{content:'';background:#e5e5e5;position:absolute;left:0;top:0;bottom:0}}@media screen and (min-width: 40em){html{font-size:17px}}@media screen and (min-width: 54em){html{font-size:16px}}@media screen and (min-width: 88em){html{font-size:17px}}@media screen and (min-width: 125em){html{font-size:18px}}.sr-only{display:none}.clearfix,.sidebar-social::after,.clearafter::after{content:"";display:table;clear:both}a,.a{position:relative;padding-bottom:.15rem;border-style:hidden}.img{overflow:hidden;background-color:#f9f9f9}.img>img{margin:0;width:100%;height:100%}.sixteen-nine{position:relative}.sixteen-nine::before{display:block;content:"";width:100%;padding-top:56.25%}.sixteen-nine>*{position:absolute;top:0;left:0;right:0;bottom:0}h1+hr,h2+hr,h3+hr,h4+hr,h5+hr,h6+hr{margin-top:0}.fade-in{animation-duration:500ms;animation-name:fade-in;animation-fill-mode:forwards}@keyframes fade-in{from{transform:translateY(-2rem);opacity:0}50%{transform:translateY(-2rem);opacity:0}to{transform:translateY(0);opacity:1}}.mb6{margin-bottom:10rem}.sidebar{color:rgba(255,255,255,0.75);text-align:left}.sidebar::before{content:"";position:absolute;z-index:2;top:0;left:0;bottom:0;right:0;background:linear-gradient(to bottom, rgba(32,32,32,0) 0%, rgba(32,32,32,0.5) 100%)}.sidebar a{color:#fff;border-bottom-color:rgba(255,255,255,0.2)}.right-side{width:100%;margin-left:auto;margin-right:auto}.right-side .ad-first{text-align:center}@media screen{.right-side{max-width:38rem;min-height:100vh}.right-side .ad-second{display:none}}@media screen and (min-width: 54em){.right-side{margin-left:20rem;margin-right:1rem;padding:4rem 1rem 12rem}.right-side .ad-second{text-align:center;display:block}}@media screen and (min-width: 72em){.right-side{margin-left:22rem;max-width:42rem}}@media screen and (min-width: 88em){.right-side{width:162px;margin-left:0rem;margin-right:0rem;padding:0rem;margin-top:10rem;display:block;float:left}}@media screen and (min-width: 96em){.right-side{width:300px;margin-right:0rem}}#_yDrawer{position:relative}@media screen{#_yDrawer{min-height:640px;min-height:100vh}}@media screen and (min-width: 54em){#_yDrawer{width:18rem;margin-left:0}}.sidebar-bg{position:absolute;height:100%;overflow:hidden;top:0;right:0;bottom:0;left:0;background:#202020 center / cover}.sidebar-box{display:flex;justify-content:center}.sidebar-sticky{position:relative;z-index:3}@media screen{.sidebar-sticky{-ms-overflow-style:none;overflow:-moz-scrollbars-none;height:100%;overflow:auto;position:absolute;padding:3rem 0rem;right:2.5rem;left:2.5rem}}.sidebar-sticky::-webkit-scrollbar{display:none}.sidebar-about>h1{color:#fff;font-size:2rem}.sidebar-nav>ul{list-style:none;padding-left:0;margin-bottom:.5rem}a.sidebar-nav-item{width:100%;font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}a.sidebar-nav-subitem{font-weight:normal;display:block;line-height:1.75;padding:.25rem 0;border-bottom:1px solid rgba(255,255,255,0.2)}@media screen{.y-drawer-scrim{z-index:2}.y-drawer-content{width:18rem;left:-18rem;z-index:3}}.sidebar-social{margin-bottom:.5rem}.sidebar-social>ul{list-style:none;padding-left:0;margin:0 -.25rem}.sidebar-social>ul>li{float:left}.sidebar-social>ul>li>a{display:inline-block;text-align:center;font-size:1.6rem;line-height:3rem;width:3.1249rem;height:4rem;padding:.5rem 0}.sidebar-social>ul li+li{margin-top:0}.fixed-top{position:fixed;top:0;left:0;width:100%;z-index:1}.navbar>.content{padding-top:0;padding-bottom:0;min-height:0;height:0}.menu{display:inline-block;padding:1.75rem 1.5rem;border-bottom:none;margin-left:-1.5rem;color:#9a9a9a !important}.menu::after{content:"\2630"}@media screen and (min-width: 54em){.menu{padding:1.25rem 1.5rem;position:absolute;left:-9999px}.menu:focus{position:static}}.animation-main{pointer-events:none}.loading{display:none}@media print{.menu{display:none}}.animation-main{opacity:0;will-change:opacity}.loading{position:absolute;top:0;right:0;padding:5.25rem 4.5rem;transform-origin:top right;transform:scale(0.33)}.content{position:relative;margin-left:auto;margin-right:auto;padding:5rem 1rem 12rem}@media screen{.content{min-height:100vh}}@media screen and (min-width: 54em){.content{padding:4rem 1rem 12rem;margin-left:19rem;margin-right:3rem}}@media screen and (min-width: 72em){.content{max-width:42rem;margin-left:21rem}}@media screen and (min-width: 88em){.content{float:left;width:100%;margin-left:22rem;margin-right:5rem}}@media screen and (min-width: 96em){.content{max-width:44rem}}@media screen and (min-width: 102em){.content{margin-left:25rem;margin-right:8rem}}.me{width:6.5rem;height:6.5rem;align-self:center;margin-right:20px;border-radius:100%;position:relative}@media screen and (min-width: 40em){.me{width:7rem;height:7rem}}@media screen and (min-width: 54em){.me{width:6.5rem;height:6.5rem}}@media screen and (min-width: 72em){.me{width:7rem;height:7rem}}main>footer{width:100%;position:absolute;bottom:0;left:0;right:0;padding:0 1rem;color:#9a9a9a;font-size:smaller;text-align:center}main>footer>p{margin-bottom:0}html{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.heading{font-family:'Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif'}
+
+</style>
+
+
+<link rel="preload" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0" as="style" onload="this.rel='stylesheet'">
+
+<style id="_pageStyle">
+
+.content a{color:#4f86aa;border-color:rgba(79,134,170,0.2)}.content a:hover{border-color:#4f86aa}:focus{outline-color:#4f86aa}::selection{color:#fff;background:#4f86aa}::-moz-selection{color:#fff;background:#4f86aa}
+
+</style>
+
+
+<noscript>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/hydejack.css?v=6.4.0">
+  
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <style>
+      html { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: 'Merriweather-Light','Lato','-apple-system','Verdana','PingFang SC','Helvetica Neue','Arial','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei','sans-serif' }
+    </style>
+  
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/icomoon/style.css">
+</noscript>
+<!--<![endif]-->
+
+</head>
+
+<body>
+  <!-- =============== -->
+<!-- MENU            -->
+<!-- =============== -->
+<div class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <a id="_menu" class="menu no-hover" href="#_title">
+      <span class="sr-only">Menu</span>
+    </a>
+  </div>
+</div>
+
+<!-- =============== -->
+<!-- CONTENT         -->
+<!-- =============== -->
+<div id="_yPushState">
+  <div class="fade-in">
+    <main id="_main" class="content" role="main" data-color="#4f86aa" data-image="/assets/img/main_left.jpg">
+      
+
+<article id="post-review/2020/03/28/review-book-everyones-dl" class="post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        [리뷰] 모두의 딥러닝(개정2판)
+      
+    </h1>
+
+    <p class="post-date heading">
+      <time datetime="2020-03-28T00:00:00+09:00">28 Mar 2020</time>
+      
+
+
+
+
+
+
+
+
+
+in <a href="/category/review/" data-flip="title">Review</a>
+
+      
+
+
+
+
+
+
+
+
+
+on <a href="/tag/review-review/" data-flip="title">Review</a>, <span>Book</span>, <a href="/tag/dev-dl/" data-flip="title">DL</a>, <span>Deep</span>, <span>Learning</span>, <span>Cnn</span>, <span>Rnn</span>, <span>Auto</span>, <span>Encoder</span>, <span>Gan</span>, <span>Nlp</span>
+
+    </p>
+
+    
+  <div class="hr" style="padding-bottom:0"></div>
+
+
+  </header>
+  
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
+    <div class="markdown-body">
+
+<div class="head-image"><img src="http://localhost:4000/assets/img/review/2020-03-28-review-book-everyones-dl-1.jpg"/></div>
+<br/>
+<style>
+.googleads { display:block; width:98%; height: 280px; }
+@media(min-width: 600px) { .googleads { display: none; } }
+</style>
+<ins class="adsbygoogle myAd1190"
+    data-ad-client="ca-pub-1200017190012992"
+></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+      <h2 id="개요">개요</h2>
+<blockquote>
+  <p>본 리뷰는 <code class="language-plaintext highlighter-rouge">길벗</code> 출판사 <code class="language-plaintext highlighter-rouge">"모두의 딥러닝(조태호 저)"</code>을 읽고 얻은 지식을 정리한 글입니다.</p>
+</blockquote>
+
+<ul>
+  <li>목차</li>
+  <li><a href="#시간이-많지-않은-독자분들을-위하여-요약소개">시간이 많지 않은 독자분들을 위하여 (요약소개)</a></li>
+  <li><a href="#개정판에서-달라진-점">개정판에서 달라진 점</a></li>
+  <li><a href="#직관적인-시각-자료를-활용한-핵심만-간추린-설명">직관적인 시각 자료를 활용한 핵심만 간추린 설명!</a></li>
+  <li><a href="#표지가-가벼워보인다고-내용까지-가벼운-것은-아니다">표지가 가벼워보인다고 내용까지 가벼운 것은 아니다.</a></li>
+  <li><a href="#누가-읽어야-하는가">누가 읽어야 하는가?</a></li>
+  <li><a href="#책의-구성-및-요약">책의 구성 및 요약</a></li>
+</ul>
+
+<h2 id="시간이-많지-않은-독자분들을-위하여-요약소개">시간이 많지 않은 독자분들을 위하여 (요약소개)</h2>
+<hr />
+<p>본 도서를 한마디로 표현하자면 <code class="language-plaintext highlighter-rouge">최고의 가성비를 자랑하는 딥러닝 교재</code>이다. 장점을 아래와 같이 간략히 요약해보았다.</p>
+
+<ul>
+  <li>본 개정판에서 달라진 점
+    <ul>
+      <li>딥러닝 기법 중 <code class="language-plaintext highlighter-rouge">NLP, GAN, 오토인코더, 전이학습, 딥러닝 기초수학</code> 등의 내용이 추가되었다.</li>
+      <li>실습환경 또한 <code class="language-plaintext highlighter-rouge">텐서플로 2.0 기반으로 진행하며 Google Colab 및 Pycharm</code>에서의 실습 방법이 안내된다.</li>
+    </ul>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">직관적인 시각 자료를 활용한 핵심만 간추린 설명</code>이 최고의 백미이다. 아래 챕터에 시그모이드 함수, 로지스틱 회귀, XOR 문제를 예로 들었다.</p>
+  </li>
+  <li>표지가 가벼워보인다고 내용까지 가벼운 것은 아니다. 딥러닝을 학습하고 싶은 분이라면 이 책을 가장 먼저 읽으시길 강력히 추천한다.</li>
+</ul>
+
+<p>본 도서는 <code class="language-plaintext highlighter-rouge">VGG16 모델을 전이학습에 적용하여 MRI 뇌 사진으로 치매 환자를 예측하는 모델을 필두고 23가지의 다양한 예제</code>로 이루어져있다. 예제를 실습하며 초보자가 가장 어려워하거나 실수할 만한 내용들을 꼼꼼하게 풀어준다. 단언컨데 가장 적은 시간에 가장 많은 효과를 얻으실 수 있다.</p>
+
+<p>보다 자세한 정보가 필요하시다면 이어지는 챕터를 계속 읽어주시기 바란다.</p>
+
+<ul>
+  <li><a href="http://www.yes24.com/Product/Goods/86611190?scode=032&amp;OzSrank=1">책소개 - 모두의딥러닝(개정2판)</a></li>
+  <li><a href="https://github.com/gilbutITBook/080228">깃헙 예제소스</a></li>
+</ul>
+
+<h2 id="개정판에서-달라진-점">개정판에서 달라진 점</h2>
+<hr />
+<p>본 서적은 초판이 발행되자마자 AI분야 베스트셀러로 등극한 유명한 책이다. 때문에 초판의 좋은 기억을 갖고 계신 분들이 많을 것 같아 개정판에서 달라진 내용들을 먼저 소개하고자 한다.</p>
+
+<p>초판을 읽었을 때 약간 아쉬웠던 점이 보강되었다. 기존에 [다섯째마당] 딥러닝의 활용편이 CNN과 RNN만 소개되어서 약간 빈약하다는 생각이 들었기 때문이다. 하지만 초판이 2017년에 발간되었으므로 당시에는 빈약한 내용이 아니었고 또 필자가 이 책을 늦게 만났던 것도 한 몫했다.</p>
+
+<p>본 도서의 독특한 구성인 <code class="language-plaintext highlighter-rouge">직관적인 시각적 자료를 이용한 핵심만 간추린 명쾌한 설명이 NLP같은 다른 주제나 GAN이나 전이학습 같은 어려운 주제도 설명해주길 바랬기 때문</code>이다. 그런데 이번 개정판에 드디어 등장하게 되었다! 추가된 내용을 아래와 같이 간단히 요약해본다.</p>
+
+<ul>
+  <li>딥러닝을 이용한 자연어처리(17장)
+    <ul>
+      <li>“해보지 않으면 해낼 수 없다”과 같은 간단한 문장을 예로들어 <code class="language-plaintext highlighter-rouge">토큰화, BoW, 원-핫 인코딩, 단어임베딩</code>의 핵심을 다룬다.</li>
+      <li>이를 토대로 짧은 리뷰들을 이용하여 <code class="language-plaintext highlighter-rouge">영화 리뷰가 긍정인지 부정인지</code> 예측하는 모델을 만든다.</li>
+    </ul>
+  </li>
+  <li>세상에 없는 얼굴 GAN, 오토인코더(19장)
+    <ul>
+      <li>정말 짧은 지면에 GAN의 거의 모든것을 언급하고 핵심을 잘 전달해준다.</li>
+      <li>실습 예제로는 MNIST에 존재하지 않는 MNIST와 유사한 이미지를 생성하는데 예제 선택이 정말 탁월했다고 생각한다. <code class="language-plaintext highlighter-rouge">MNIST는 매우 쉬운 예제이고 누구나 한번쯤 다뤄봤을만한 예제이기에 GAN의 핵심을 이해하기 순조로웠다.</code></li>
+      <li>마찬가지로 오토인코더의 실습도 MNIST로 진행한다.</li>
+      <li>처음부터 방대한 DNN의 여러 주제를 이 도서로 시작할 수 있다면 행운일 것이다. 예를 들어 GAN 모델을 처음 배울 때 이미지의 크기를 축소하는 MaxPooling2D와 반대로 크기를 늘리는 UpSampling2D를 왜 비대칭으로 사용하는지 굉장히 혼동되었는데 이렇듯 <code class="language-plaintext highlighter-rouge">초보자들이 헤매이는 부분을 꼼꼼히 다잡아준다.</code></li>
+    </ul>
+  </li>
+  <li>전이학습을 통해 딥러닝의 성능 극대화하기(20장)
+    <ul>
+      <li>전이학습은 기존의 이미지에서 학습한 정보를 가져와 새로운 모델에 활용하는 기법인데 최근 매우 핫한 기법이다.</li>
+      <li>먼저 <code class="language-plaintext highlighter-rouge">ImageDataGenerator()를 활용하여 이미지 전처리</code>를 매우 쉽게 처리하는 방법에 대해 알려준다.</li>
+      <li>이어서 MRI 단면 이미지를 활용하여 치매환자인지를 예측하는 모델을 만든다.</li>
+      <li>한단계 더 나아가 <code class="language-plaintext highlighter-rouge">전이학습 기법을 활용해 정확도를 92.6%에서 100%로</code> 끌어올린다. 전이학습의 모델로 기존에 학습된 VGG16을 활용하며 전이학습을 이렇게 쉽게 가르쳐준다는 것에 적잖이 놀랐다.</li>
+      <li><img src="https://theorydb.github.io/assets/img/review/2020-03-28-review-book-everyones-dl-6.jpg" alt="전이학습" /></li>
+    </ul>
+  </li>
+  <li>기초수학과 텐서플로 2.0
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">수포자를 위한 정말 쉬운 기초 수학 챕터가 추가</code>되었다.(일차함수부터 편미분, 지수/로그 함수에서 시그모이드 함수까지 다룬다.)</li>
+      <li>본 도서의 실습 예제는 최근에 출시된 <code class="language-plaintext highlighter-rouge">텐서플로 2.0 기반</code>으로 실습을 진행할 수 있어 더욱 유익하다.</li>
+      <li>더불어 <code class="language-plaintext highlighter-rouge">Google Colab 및 Pycharm에서 실습</code>하는 방법도 부록에 안내되어있어 독자층을 넓혔다.</li>
+      <li>한가지 아쉬운 점은 초판에서 확률적 경사하강법부터 Adam 알고리즘에 이르기까지 경사하강법의 변천사를 정리한 부록 부분이 빠졌다는 점인데 아마도 학술적인 내용에 가깝다보니 보다 쉬운 구성을 위해 사라진 듯 하다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="직관적인-시각-자료를-활용한-핵심만-간추린-설명">직관적인 시각 자료를 활용한 핵심만 간추린 설명!</h2>
+<hr />
+<p>이 책의 장점은 한두가지가 아니지만 그 중에서도 최고를 꼽으라면 직관적인 시각적 자료를 이용한 핵심만 간추린 명쾌한 설명을 꼽고 싶다. 시그모이드 함수로 예를 들어보겠다.</p>
+
+<p>딥러닝을 학습하는 초보자들의 첫번째 관문은 아마 시그모이드 함수가 아닐까 싶다. 선형회귀에서 다루는 1차 방정식은 수식 자체도 너무 간단하고 도식화 했을때도 좌표상의 직선만 보이기 때문에 수식 좀 등장해도 절대 쫄지 않는다.</p>
+
+<p>그 뒤로 손실함수를 통한 최적화에 2차함수 등이 등장하긴 하지만 딥러닝을 포기하고 싶을 정도는 아니다. 하지만 분류를 위한 로지스틱 회귀가 등장하면 얘기가 조금 달라진다. 일단 수식부터 자연상수 e가 등장하고 <del>우리는 고등학교 시절의 수학이 잘 기억은 나지 않지만 자연상수 e가 등장하면서 헬게이트가 얼렸다는 사실은 대부분 기억한다.</del> 한술 더 떠 e의 지수에 선형회귀 때 살폈던 1차 방정식이 턱하니 올라가있다. <del>형이 왜 거기서 나와?</del> 슬슬 괴로워진다.</p>
+
+<p>1차 방정식이 지수로 가면 무슨 결과가 나오고 왜 저렇게 써야하며 도대체 저 함수는 어떻게 생겼을까? 많은 의문과 딥러닝 포기 경보가 울릴 때 즈음 앞서 언급한 직관적인 시각 자료가 딥러닝 생명연장의 꿈에 한발 다가가게 해준다.</p>
+
+<p>길게 설명할 것도 없이 아래 그림을 보자. 
+<img src="https://theorydb.github.io/assets/img/review/2020-03-28-review-book-everyones-dl-2.jpg" alt="시그모이드 함수1" />
+<img src="https://theorydb.github.io/assets/img/review/2020-03-28-review-book-everyones-dl-3.jpg" alt="시그모이드 함수2" /></p>
+
+<p>그림을 보면 e의 지수로 있던 1차 방정식의 의미를 쉽게 직관적으로 파악할 수 있다. <code class="language-plaintext highlighter-rouge">a의 기울기가 변하면 그래프가 어떤 모양을 가지는지, 절편 b가 변하면 그래프가 어떻게 변하는지</code> 아주 쉽게 이해할 수 있다.</p>
+
+<p>하나 더 예를 들어 보자. <code class="language-plaintext highlighter-rouge">로지스틱 회귀를 이해하기 쉽게 로그함수를 대칭, 이동 등으로 변형한 두 함수를 시각적으로 확인</code>할 수 있다. 이로 인해 도출되는 공식뿐만 아니라 오즈비 등 로지스틱 회귀의 특성을 쉽게 파악할 수 있다.
+<img src="https://theorydb.github.io/assets/img/review/2020-03-28-review-book-everyones-dl-4.jpg" alt="로지스틱 회귀" /></p>
+
+<p>선형 방정식이 해결하지 못하는 <code class="language-plaintext highlighter-rouge">XOR 문제를 딥러닝이 해결하는 방식을 시각적으로 표현</code>한 것 또한 예술이다. 
+<img src="https://theorydb.github.io/assets/img/review/2020-03-28-review-book-everyones-dl-5.jpg" alt="XOR문제" /></p>
+
+<p>이 예들은 지극히 일례일 뿐으로 책의 모든 페이지에 걸쳐 직관적인 시각자료와 핵심만 다루는 설명이 가득차 있어 인상적이었다.</p>
+
+<h2 id="표지가-가벼워보인다고-내용까지-가벼운-것은-아니다">표지가 가벼워보인다고 내용까지 가벼운 것은 아니다.</h2>
+<hr />
+<p>사실 우리에게는 AI, 딥러닝하면 왠지 좀 어려워야 하고 근엄하고 엄숙한 느낌(?)이 나야 한다는 선입견이 있다. 필자도 마찬가지였다. 때문에 사실 이 모두의 딥러닝이란 책을 꽤 늦게 집어들게 되었다. 왜냐면 표지가 너무 아동틱(?)했기 때문이다.
+이제 제법 머신러닝과 딥러닝 공부 좀 했는데 왠지 이 책을 읽으면 다 알고 있는 것을 답습한다는 느낌이 들어서였다.</p>
+
+<p>필자가 바둑을 좋아하는데 바둑에서는 하수랑 두면 실력이 줄어든다는 표현을 종종한다. 그런 느낌이었을까? 이상하게 손이 가지 않았다.</p>
+
+<p>그런데 우연히 와이프도 딥러닝을 학습하고 싶다고 해서 마땅한 교재를 찾던 중에 본 도서를 집어들게 되었다. 왠지 표지만 봐도 우리 아들도 따라할 수 있을것 같은 느낌! 서점에서 책을 대충 훑어보니 일단 그림이 많았고 더불어 아이들 참고서에서 볼 수 있을듯한 구성에 이거구나!하고 집어들게 되었다. 그런데 왠일인가? 생각보다 깊은 내용에 범위는 굉장히 방대했고 기초부터 탄탄히 잡아주는 구성에 감탄했다.</p>
+
+<p>더욱 자세히 살펴보니 인디애나대학교 의과대학 현직 교수님이 직접 저술하신 책이었고 내용도 딥러닝의 다양한 기술과 연구 성과의 핵심을 모두 담고 있었다. 지금까지 AI관련 된 책은 족히 30권은 넘게 읽은것 같은데 이렇게 쉬운 구성은 보질 못했다.</p>
+
+<p>더욱이 이 다양한 분야의 예제를 이렇게 빨리 구현할 수 있고 큰 줄기를 빨리 파악할 수 있었더라면 AI분야 중 어떤 기술에 조금 더 집중했을지 파악하는데 큰 도움이 되었을 것이다. 먼저 읽었던 30여권의 책의 좋은 네비게이션이 되어 학습 시너지가 크게 올라갔을 것 또한 두말할 나위 없다. 처음부터 이 책으로 시작하지 못한 것에 배가 많이 아팠던.. 내게는 조금 묘한책이다.</p>
+
+<p>이것으로 책에 대한 소개를 마칠까 한다. 딥러닝에 관심이 있는 분이라면 누구든 좋다. 책을 읽어나가는 족족 <code class="language-plaintext highlighter-rouge">딥러닝 학습의 최고 가성비</code>를 느끼실 수 있을것이다.</p>
+
+<h2 id="누가-읽어야-하는가">누가 읽어야 하는가?</h2>
+<hr />
+<ul>
+  <li>AI에 흥미가 생긴 학생 및 모든 분.</li>
+  <li>딥러닝을 처음으로 접하는 모든 분.</li>
+  <li>그 외 딥러닝 난이도의 벽에 막혀 마지막으로 딱 한번 더 도전하고 싶은 분.</li>
+</ul>
+
+<h2 id="책의-구성-및-요약">책의 구성 및 요약</h2>
+<hr />
+<p>이 책은 크게 세부분으로 구성되며, 각 파트에서 다루는 내용을 아래와 같이 요약해 보았다.</p>
+
+<ul>
+  <li><strong>1. 신경망과 딥러닝의 개요 (첫째마당 ~ 셋째마당)</strong>
+    <ul>
+      <li>폐암 수술 환자의 생존 예측을 기본으로 한 딥러닝의 개요 살피기</li>
+      <li>딥러닝을 위한 기초수학</li>
+      <li>선형회귀, 경사하강법, 로지스틱 회귀, 다층 퍼셉트론, 오차역전파 등 딥러닝의 핵심 개념</li>
+    </ul>
+  </li>
+  <li><strong>2. 딥러닝 기본기 다지기 (넷째마당)</strong>
+    <ul>
+      <li>모델설계, 데이터 가공, 다중분류, 과적합 등</li>
+    </ul>
+  </li>
+  <li><strong>3. 딥러닝의 활용 (다섯째마당)</strong>
+    <ul>
+      <li>CNN, NLP, RNN, GAN, 오토인코더, 전이학습 등</li>
+      <li>부록 : 오파역전파 계산법, XOR구현, Google Colab 및 Pycharm 구동법 등</li>
+    </ul>
+  </li>
+</ul>
+
+      <br/>
+      <br/>
+      <!-- 블로그-하단-반응형 -->
+      <ins class="adsbygoogle"
+          style="display:block; width:100%; height:300px;"
+          data-ad-client="ca-pub-1200017190012992"
+          data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+    <script>
+
+    </script>
+  
+
+</article>
+
+  <hr class="dingbat" />
+
+  <div class="share">
+      <h2>Share this post</h2>
+      <div class="share-body">
+        <a href="http://twitter.com/share?text=[리뷰] 모두의 딥러닝(개정2판)&amp;url=http://localhost:4000/review/2020/03/28/review-book-everyones-dl/"
+    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="icon-twitter">
+            </span>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/review/2020/03/28/review-book-everyones-dl/"
+    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="icon-facebook">
+            </span>
+        </a>
+    </div>
+  </div>
+  <br/>
+
+
+
+
+
+
+  <aside class="author" role="complementary">
+    <div class="author">
+  <h2 class="page-title hr">
+    About
+  </h2>
+<div class="author-body">
+  
+    
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+  
+  <div class="author-body-description">
+    <p>Data science enthusiast and addict :)</p>
+
+  </div>
+</div>
+</div>
+
+  </aside>
+
+
+
+
+
+<aside class="related" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+      
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/15/review-book-licensed-rea-tax/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 2차 부동산세법</span>
+  </a>
+  <small><time datetime="2023-06-15T00:00:00+09:00">
+    15 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/06/14/review-book-licensed-rea-intro/" data-flip="title">
+    <span>[리뷰] 2023 EBS 공인중개사 랜드하나 예상문제집 1차 부동산학개론</span>
+  </a>
+  <small><time datetime="2023-06-14T00:00:00+09:00">
+    14 Jun 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+          
+
+
+<li class="h4">
+  <a href="/review/2023/05/26/review-book-law-contract/" data-flip="title">
+    <span>[리뷰] 잘 나가는 이공계 직장인들을 위한 법률·계약 상식</span>
+  </a>
+  <small><time datetime="2023-05-26T00:00:00+09:00">
+    26 May 2023
+  </time></small>
+</li>
+
+        
+      
+        
+        
+      
+    
+  </ul>
+</aside>
+
+
+
+      
+        <aside class="comments" role="complementary">
+  <h2>Comments</h2>
+  <hr/>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function e(e){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:d}))}var d=function(){this.page.title="[리뷰] 모두의 딥러닝(개정2판)",this.page.identifier="/review/2020/03/28/review-book-everyones-dl",this.page.url="http://localhost:4000/review/2020/03/28/review-book-everyones-dl/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//eungwan.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",e,{passive:!0}):s.attachEvent?s.attachEvent("onscroll",e):s.onscroll=e)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+      
+
+      <footer>
+  <hr/>
+  
+    <p>© 2023.06. by breadream.io</p>
+
+  
+  <p>
+    <code>Powered by <a href="https://theorydb.github.io/">theorydb</a></code>
+  </p>
+</footer>
+
+    </main>
+    <div class="right-side">
+  <div class="ad-first">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 블로그-상단-모바일 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:100%;"
+         data-ad-client="ca-pub-1200017190012992"
+         data-ad-format="auto"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+<br/>
+<br/>
+  <div class="ad-second">
+    <!-- 블로그-스카이스크래퍼 -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;max-width:320px;width:100%;height:600px"
+         data-ad-client="ca-pub-1200017190012992"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+</div>
+
+  </div>
+  <div id="_yDrawer">
+  <div id="_sidebar" class="sidebar">
+    <div class="sidebar-bg" style="background-color:#4f86aa;background-image:url(/assets/img/main_left.jpg)"></div>
+    <header class="sidebar-sticky" role="banner">
+      <br/>
+      <div class="sidebar-about">
+        <h1><a id="_title" href="/">breadream.io</a></h1>
+        <p>Orange Bread</p>
+
+      </div>
+
+      <br/>
+      <br/>
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+
+  
+
+  
+  
+  
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-1"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/think/">Think</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/think-think/">Think</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-2"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/envops/">EnvOps</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-3"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/startup/">Startup</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/startup-startup/">Startup</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-4"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/unclassified/">Unclassified</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/unclassified-unclassified/">Unclassified</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-5"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/review/">Review</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/review-review/">Review</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-6"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/category/favorites/">Favorites</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+             <li>
+               <a class="sidebar-nav-subitem" href="/tag/favorites-favorites/">Favorites</a>
+             </li>
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+  
+    <li>
+      <input type="checkbox" id="list-item-7"/>
+      <div  class="list-wrapper">
+      <a class="sidebar-nav-item" href="/about/">About</a>
+       
+    </div>
+     <ul class="list-body">
+       
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+           
+         
+     </ul>
+    </li>
+
+  
+</ul>
+
+      </nav>
+    <br/>
+
+    <form action="/search">
+      <div class="tipue_search_left">
+        <img src="/assets/tipuesearch/search.png" class="tipue_search_icon">
+      </div>
+      <div class="tipue_search_right">
+        <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
+      <div style="clear: both;"></div>
+    </form>
+
+    <br/>
+      <div class="sidebar-box">
+        
+          
+  
+
+  
+
+  <img
+    src="/assets/img/me.jpg"
+    class="me"
+    alt="eungwan"
+    srcset="/assets/img/me.jpg 1x,/assets/img/me.jpg 2x"
+    
+  />
+
+
+        
+      </div>
+      <p>Orange Bread :)</p>
+
+      
+      
+        <div class="sidebar-social">
+          <span class="sr-only">Social:</span>
+<ul>
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://facebook.com/breadream.io">
+    <span class="icon-facebook" title="Facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/eungwan">
+    <span class="icon-github" title="GitHub"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:eungwan@gmail.com">
+    <span class="icon-mail" title="Email"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://eungwan.github.io/feed.xml">
+    <span class="icon-rss2" title="RSS"></span>
+    <span class="sr-only">RSS</span>
+  </a>
+</li>
+
+  
+</ul>
+
+        </div>
+      
+    </header>
+  </div>
+</div>
+
+</div>
+
+<!-- =============== -->
+<!-- SCRIPTS         -->
+<!-- =============== -->
+
+
+
+
+
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    
+    google: {
+      families: 'Lato'.split('|')
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack.js?v=6.4.0');</script>
+
+  
+  <!--<![endif]-->
+
+
+
+</body>
+
+</html>
